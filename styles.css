@@ -1307,7 +1307,7 @@ p{
 
 @media(max-width: 384px){
   #footer{
-    width: 474px;
+    width: 424px;
     margin-top: 20px;
   }
 }
@@ -1321,14 +1321,13 @@ p{
 
 @media(min-width:385px) and (max-width: 670px){
   #footer{
-    width: 680px;
+    width: 630px;
     margin-top: 20px;
   }
 }
 
 .footer-info{
   height: 300px;
-  width: 1530px;
   background-color: rgb(0, 183, 255);
   display: flex;
   padding-left: 50px;
