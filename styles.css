@@ -47,7 +47,7 @@ html {
 
 @media(min-width:385px) and (max-width: 670px){
   #brand{
-    margin-left: 190px;
+    margin-left: 200px;
     display: block;
 
 
@@ -56,25 +56,20 @@ html {
 
 
 .fsa_logo{
+  object-fit: contain;
+  aspect-ratio: 3/2;
+  width: 50%;
+  margin-left: 15px;
+  margin-bottom: -10px;
+  margin-top: 10px;
 
-    height: 55px;
-    border-radius: 5px;
-    margin-right: 30px;
-    margin-left: 40px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    border-top-right-radius: 200px;
-    border-top-left-radius: 199px;
-    mix-blend-mode:multiply;
-    cursor: pointer;
-    opacity: 20000px;
 
 
 }
 h3{
-    margin-left: 10px;
+    margin-left: 11px;
     margin-top: 0px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -87,7 +82,7 @@ h3{
     width: auto;
     min-width: 300px;
     max-width: 400px;
-    height: 650px;
+    height: 600px;
     align-content: left;
     background-color: rgb(0, 183, 255);
     box-shadow: 2px 1px 9px -3px rgb(0, 0, 0);
@@ -176,24 +171,15 @@ h3{
   height: auto;
   width: auto;
 }
-.fsa-home img{
-  width: 15%;
-  aspect-ratio: 3/2;
-  object-fit: contain;
-  margin-left: 30px;
-  cursor: pointer;
-}
 
 .fsa-home a{
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.5rem;
   font: bold;
-  color: black;
-  margin-left: -10px;
-  margin-right: 50px;
+  color: whitesmoke;
   text-align: center;
-  margin: 0px;
   font-family: monospace;
+  margin-left: 60px;
 }
 
 .services{
@@ -202,10 +188,11 @@ h3{
   display: flex;
   align-items: center;
   margin-bottom: 0px;
+  padding: 5px;
 }
 .fsa-services{
   height: fit-content;
-  width: auto;
+  width: 100%;
   margin-bottom: 0px;
   justify-content: center;
   padding: 5px;
@@ -219,34 +206,16 @@ h3{
 
 
 }
-.more-services{
-  background-color: transparent;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  align-items: center;
-  height: 40px;
-  border: none;
-  cursor: pointer;
-}
 
-.fsa-services img{
-  aspect-ratio: 3/2;
-  width: 15%;
-  object-fit: contain;
-  margin-left: 30px;
-  cursor: pointer;
-}
 
 .fsa-services a{
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.5rem;
   font: bold;
-  color: black;
-  margin-left: -10px;
-  margin-right: 50px;
+  color: whitesmoke;
   text-align: center;
-  margin: 2px;
   font-family: monospace;
+  margin-left: 60px;
   
 }
 
@@ -255,6 +224,7 @@ h3{
   width: auto;
   display: flex;
   align-items: center;
+  padding: 5px;
 }
 .contacts-us:hover{
   background-color: rgb(6, 81, 110);
@@ -272,24 +242,15 @@ h3{
 
 }
 
-.fsa-contacts img{
-  width: 15%;
-  aspect-ratio: 3/2;
-  object-fit: contain;
-  margin-left: 30px;
-  cursor: pointer;
-}
 
 .fsa-contacts a{
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.5rem;
   font: bold;
-  color: black;
-  margin-left: -10px;
-  margin-right: 50px;
+  color: whitesmoke;
   text-align: center;
-  margin: 2px;
   font-family: monospace;
+  margin-left: 60px;
 }
 
 .payments{
@@ -297,6 +258,7 @@ h3{
   width: auto;
   display: flex;
   align-items: center;
+  padding: 5px;
 }
 .payments:hover{
   background-color: rgb(6, 81, 110);
@@ -313,24 +275,15 @@ h3{
   padding: 5px;
 }
 
-.fsa-payments img{
-  width: 16%;
-  aspect-ratio: 3/2;
-  object-fit: contain;
-  margin-left: 30px;
-  cursor: pointer;
-}
 
 .fsa-payments a{
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.5rem;
   font: bold;
-  color: black;
-  margin-left: -10px;
-  margin-right: 50px;
+  color: whitesmoke;
   text-align: center;
-  margin: 2px;
   font-family: monospace;
+  margin-left: 60px;
 }
 
 .staff{
@@ -338,6 +291,7 @@ h3{
   width: auto;
   display: flex;
   align-items: center;
+  padding: 5px;
 }
 
 .staff:hover{
@@ -354,24 +308,15 @@ h3{
   padding: 5px;
 }
 
-.fsa-team img{
-  width: 16%;
-  object-fit: contain;
-  aspect-ratio: 3/2;
-  margin-left: 30px;
-  cursor: pointer;
-}
 
 .fsa-team a{
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.5rem;
   font: bold;
-  color: black;
-  margin-left: -10px;
-  margin-right: 50px;
+  color: whitesmoke;
   text-align: center;
-  margin: 2px;
   font-family: monospace;
+  margin-left: 60px;
 }
 
 .partners{
@@ -379,6 +324,7 @@ h3{
     width: auto;
     display: flex;
     align-items: center;
+    padding: 5px;
   }
 
 .fsa-partners{
@@ -394,24 +340,16 @@ h3{
   border-bottom-right-radius: 100px;
   border-top-right-radius: 100px;
 }
-.fsa-partners img{
-  width: 16%;
-  object-fit: contain;
-  aspect-ratio: 3/2;
-  margin-left: 30px;
-  cursor: pointer;
-}
+
 
 .fsa-partners a{
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.5rem;
   font: bold;
-  color: black;
-  margin-left: -10px;
-  margin-right: 50px;
+  color: whitesmoke;
   text-align: center;
-  margin: 2px;
   font-family: monospace;
+  margin-left: 60px;
 }
 
 .events{
@@ -419,6 +357,7 @@ h3{
   width: auto;
   display: flex;
   align-items: center;
+  padding: 5px;
 }
 
 .fsa-events{
@@ -434,24 +373,15 @@ border-radius: 10px;
 border-bottom-right-radius: 100px;
 border-top-right-radius: 100px;
 }
-.fsa-events img{
-width: 16%;
-object-fit: contain;
-aspect-ratio: 3/2;
-margin-left: 30px;
-cursor: pointer;
-}
 
 .fsa-events a{
-text-decoration: none;
-font-size: 18px;
-font: bold;
-color: black;
-margin-left: -10px;
-margin-right: 50px;
-text-align: center;
-margin: 2px;
-font-family: monospace;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font: bold;
+  color: whitesmoke;
+  text-align: center;
+  font-family: monospace;
+  margin-left: 60px;
 }
 
 /* start on the home main page */
@@ -473,7 +403,9 @@ font-family: monospace;
   color: rgb(255, 255, 255);
   text-decoration: none;
   background-image: url(businesswoman.png);
-  background-position: center;
+  background-position: cover;
+  background-size: cover;
+  
 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -484,12 +416,13 @@ font-family: monospace;
   text-align: center;
   font: bold;
   font-family: monospace;
+  margin-top: 30px;
   font-size: 1.9rem;}
 
 @media (max-width:384px){
   #main-container{
     width: 474px;
-    color: rgb(3, 3, 40);
+    color: rgb(0, 0, 0);
 
   }
 }
@@ -497,15 +430,15 @@ font-family: monospace;
 @media (min-width: 385px) and (max-width: 670px){
   #main-container{
     width: 680px;
-    color:rgb(3, 3, 40);
+    color: rgb(0, 0, 0);
 
   }
 }
 
 @media (min-width:670px){
   #main-container{
-    width: 1550px;
-    color: rgb(3, 3, 40);
+    width: 1580px;
+    color: rgb(0, 0, 0);
   }
 }
 
@@ -766,7 +699,7 @@ p{
 
 @media(min-width: 670px){
   #user{
-    width: 1550px;
+    width: 1580px;
   }
 }
 @media(min-width:385px) and (max-width: 670px){
@@ -927,7 +860,7 @@ p{
 
 @media(min-width: 670px){
   #bank-numbers{
-    width: 1549px;
+    width: 1580px;
     margin-bottom: -40px;
     background-repeat: repeat;
   }
@@ -961,7 +894,7 @@ p{
 
 @media(min-width: 670px){
   #fsa-numbers{
-    width: 1549px;
+    width: 1580px;
   }
 }
 
@@ -1354,7 +1287,7 @@ p{
 
 @media(min-width: 670px){
   #footer{
-    width: 1549px;
+    width: 1580px;
     margin-top: 20px;
   }
 }
@@ -1385,7 +1318,7 @@ p{
 
 @media(min-width: 670px){
   #disclamer{
-    width: 1549px;
+    width: 1580px;
     margin-top: 0px;
     height: 100px;
     background-color: rgb(3, 3, 40);
