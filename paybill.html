@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayBill</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body onload="fsaPaybill()" class="animate-bottom" id="paybill">
+    <nav class="top_navigation">
+        <div class="menu">
+            <span class="open-menu-icon" id="mobile-menu" onclick="openMenu()"> &#9776;</span>
+        </div>
+        
+        
+            <div class="bank_logo" >
+                <a href="index.html" id="brand"><img src="fsa good logo.png" class="fsa_logo" alt="">
+                <h3>KIKUMINI F.S.A</h3></a>
+            </div>
+    </nav>
+    <span class="close-menu-icon" id="close-menu-bar" onclick="closeMenu()">&times;</span>
+
+
+    <div class="main-content" id="main-content">
+
+        <div class="steps" id="steps">
+            <div class="topic" id="topic">
+                <p>Follow these simple steps to use our PayBill number</p>
+                <ol>
+                    <li>Open sim toolkit and select <strong>M-PESA</strong></li><br>
+                    <li>Select <strong>Lipa na M-PESA</strong></li><br>
+                    <li>Go to <strong>Pay Bill</strong></li><br>
+                    <li>Select <strong>Enter Business Number</strong></li><br>
+                    <li>Enter our Business number <strong>713243</strong></li><br>
+                    <li>Click <strong>Account Number</strong></li><br>
+                    <li>Enter your <strong>ID NUMBER</strong> as your account number eg 37258120</li><br>
+                    <li>Click<strong>OK,</strong>and in the next step enter amount</li><br>
+                    <li>Enter your <strong>M-PESA PIN</strong> to confirm the payment </li><br>
+                </ol>
+                <p>CONGRATULATIONS YOU HAVE MADE YOUR PAYMENT SUCCEFULLY!!</p>
+    
+            </div>
+
+            <div class="steps-images" id="step-images">
+                <img src="phonescreen.png" alt="" id="phonescreen">
+                <img src="phone-screen.jpg" alt="" id="phonescreen1" class="phone">
+                <div class="steps-images-details" id="steps-images-details">
+                    <div class="step-number" id="step-number">
+                        <h1> 1</h1>
+                    </div>
+                    <div class="step-one" id="step-one">
+                        <div class="safaricom">
+                            <h4>Safaricom</h4>
+                        </div>
+                        <div class="safaricom1">
+                            <h5>safaricom</h5><hr>
+                        </div>
+                        <div class="safaricom-plus">
+                            <h4>Safaricom+</h4>
+                        </div><hr>
+                        <div class="important">
+                           <h3>M-PESA</h3>
+                           <div class="directions">
+                                <div class="arrowSliding">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay1">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay2">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay3">
+                                  <div class="arrow"></div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="steps-images-details" id="steps-images-details">
+                    <div class="step-number" id="step-number">
+                        <h1> 2</h1>
+                    </div>
+                    <div class="step-one" id="step-one">
+                        <div class="safaricom">
+                            <h4>Safaricom</h4>
+                        </div>
+                        <div class="safaricom1">
+                            <h5>SIM toolkit</h5><hr>
+                        </div>
+                        <div class="safaricom-plus">
+                            <h4>Send Money</h4>
+                        </div><hr>
+                        <div class="safaricom-plus">
+                            <h5>Withdraw Cash</h5>
+                        </div><hr>
+                        <div class="safaricom-plus">
+                            <h4>Buy Airtime</h4>
+                        </div><hr>
+                        <div class="safaricom-plus">
+                            <h4>Loans and Savings</h4>
+                        </div><hr>
+                        <div class="important">
+                           <h3>Lipa na M-PESA</h3>
+                           <div class="directions">
+                                <div class="arrowSliding">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay1">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay2">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay3">
+                                  <div class="arrow"></div>
+                                </div>
+                           </div>
+                        </div><hr>
+                        <div class="safaricom-plus">
+                            <h4>My Account</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="steps-images-details" id="steps-images-details">
+                    <div class="step-number" id="step-number">
+                        <h1> 3</h1>
+                    </div>
+                    <div class="step-one" id="step-one">
+                        <div class="safaricom">
+                            <h4>Safaricom</h4>
+                        </div>
+                        <div class="safaricom1">
+                            <h5>Lipa na M-PESA</h5>
+                        </div><hr>
+                        <div class="important">
+                           <h3>Pay Bill</h3>
+                           <div class="directions">
+                                <div class="arrowSliding">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay1">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay2">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay3">
+                                  <div class="arrow"></div>
+                                </div>
+                           </div>
+                        </div><hr>
+                        <div class="safaricom-plus">
+                            <h4>Buy Goods and Services</h4>
+                        </div><hr>
+                        <div class="safaricom-plus">
+                            <h4>Pochi La Biashara</h4>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="steps-images-details" id="steps-images-details">
+                    <div class="step-number" id="step-number">
+                        <h1> 4</h1>
+                    </div>
+                    <div class="step-one" id="step-one">
+                        <div class="safaricom">
+                            <h4>Safaricom</h4>
+                        </div>
+                        <div class="safaricom1">
+                            <h5>SIM toolkit</h5><hr>
+                        </div>
+                        <div class="safaricom-plus">
+                            <h4>Search SIM Contact</h4>
+                        </div><hr>
+                        <div class="important">
+                           <h3>Enter business no.</h3>
+                           <div class="directions">
+                                <div class="arrowSliding">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay1">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay2">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay3">
+                                  <div class="arrow"></div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="steps-images-details" id="steps-images-details">
+                    <div class="step-number" id="step-number">
+                        <h1>5</h1>
+                    </div>
+                    <div class="step-one" id="step-one">
+                        <div class="safaricom">
+                            <h4>Safaricom</h4>
+                        </div>
+                        <div class="enter-business-no">
+                            <h5>Enter business no.</h5>
+                        </div>
+                        <div class="important">
+                            <div class="fsa-paybill-no">
+                                <h2>7132643</h3>
+                            </div>
+                           <div class="directions">
+                                <div class="arrowSliding">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay1">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay2">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay3">
+                                  <div class="arrow"></div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="steps-images-details" id="steps-images-details">
+                    <div class="step-number" id="step-number">
+                        <h1>6</h1>
+                    </div>
+                    <div class="step-one" id="step-one">
+                        <div class="safaricom">
+                            <h4>Safaricom</h4>
+                        </div>
+                        <div class="safaricom1">
+                            <h5>SIM toolkit</h5><hr>
+                        </div>
+                        <div class="safaricom-plus">
+                            <h4>Search SIM Contact</h4>
+                        </div><hr>
+                        <div class="important">
+                           <h3>Account  no.</h3>
+                           <div class="directions">
+                                <div class="arrowSliding">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay1">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay2">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay3">
+                                  <div class="arrow"></div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="steps-images-details" id="steps-images-details">
+                    <div class="step-number" id="step-number">
+                        <h1> 7</h1>
+                    </div>
+                    <div class="step-one" id="step-one">
+                        <div class="safaricom">
+                            <h4>Safaricom</h4>
+                        </div>
+                        <div class="enter-business-no">
+                            <h5>Enter Account no.</h5>
+                        </div>
+                        <div class="important">
+                            <div class="fsa-paybill-no">
+                                <h2>YOUR ID NUMBER</h3>
+                            </div>
+                           <div class="directions">
+                                <div class="arrowSliding">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay1">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay2">
+                                  <div class="arrow"></div>
+                                </div>
+                                <div class="arrowSliding delay3">
+                                  <div class="arrow"></div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+
+
+            </div>
+        </div>
+      <script>
+            var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                var i;
+                var x = document.getElementsByClassName("steps-images-details");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 5000); // Change image every 5 seconds
+                }
+        </script> 
+
+
+    </div>
+
+    <div class="darshboard" id="sidebar">
+        <span class="close-menu-icon" id="close-menu-bar" onclick="closeMenu()">&times;</span>
+        <div class="what-wedo">
+            <br>
+            <hr>
+            <div class="home">
+                <div class="fsa-home">
+                    
+                    <a href="index.html"> Home</a>
+                </div>
+            </div> <hr>
+            <div class="services">
+                <div class="fsa-services">
+                    
+                    <a href="#"> Services</a>
+                </div>
+            </div>
+            <hr>
+            <div class="payments">
+                <div class="fsa-payments">
+                    
+                    <a href="#"> Payments</a>
+                </div>
+            </div>
+            <hr>
+            <div class="staff">
+                <div class="fsa-team">
+                    
+                    <a href="#"> Our Team</a>
+                </div>
+            </div>
+            <hr>
+            <div class="partners">
+                <div class="fsa-partners">
+                    <a href="#"> Our Partners</a>
+                </div>
+            </div>
+            <hr>
+            <div class="events">
+                <div class="fsa-events">
+                    <a href="#"> Events</a>
+                </div>
+            </div>
+            <hr>
+            <div class="contacts-us">
+                <div class="fsa-contacts">
+                    <a href="#">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <footer id="footer">
+        <div class="footer-info" id="footer-info">
+            <div class="for-you" id="for-you">
+                <h2>You Can</h2>
+                <div class="task">Create an Account</div>
+                <div class="task">Get a Loan</div>
+                <div class="task">Buy Shares</div>
+                <div class="task">Save Your Money</div>      
+            </div>
+    
+            <div class="for-your-business" id="for-business">
+                <h2>For Your Business</h2>
+                <div class="task">Grow Your Business</div>
+                <div class="task">Open an Account</div>
+                <div class="task">Get Loan</div>
+                <div class="task">Save Your Profits</div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    
+    <div class="disclamer" id="disclamer">
+        <p>Designed and published by C & L TECH HUB</p>
+        <P>&copy;2023 F.S.A Kikumini</P>
+    
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
