@@ -7,6 +7,27 @@ function closeMenu() {
         document.getElementById("sidebar").style.display = "none";
     }
 
+function closeAd(){
+  document.getElementById("candlads").style.marginTop = "-30%";
+  document.getElementById("close-ad-bar").style.display = "none";
+  document.getElementById("mobile-menu-ad").style.display = "block";
+
+
+  }
+
+function openAd(){
+  document.getElementById("candlads").style.marginTop = "-100%";
+  document.getElementById("mobile-menu-ad").style.display = "none";
+  document.getElementById("close-ad-bar").style.display = "block";
+}
+
+
+let x = document.getElementById("candlads");
+setInterval(function(){
+  x.style.marginTop = "-100%";
+  document.getElementById("open-ad-icon").style.display = "none";
+}, 20000);
+
 
 
     var loan = document.getElementByClassName("more-services");

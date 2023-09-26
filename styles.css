@@ -1483,7 +1483,7 @@ p{
 @media(min-width:385px) and (max-width:670px){
   #main-content{
     width: 680px;
-    height: 800px;
+    height: 900px;
 
 
   }
@@ -1492,7 +1492,7 @@ p{
 @media(min-width:670px){
   #main-content{
     width: 1580px;
-    height: 760px;
+    height: 1050px;
   }
 }
 
@@ -1550,7 +1550,7 @@ p{
   #steps{
     height: 250px;
     display: block;
-    margin-top: 200px;
+    margin-top:200px;
     width: 1580px;
     z-index: 0;
     position: relative;
@@ -1579,6 +1579,7 @@ p{
     padding: 10px;
     margin-top: -200px;
     position: absolute;
+    font-size: 1.3rem;
   }
 }
 
@@ -1600,10 +1601,10 @@ p{
     display: block;
     margin-top: 100px;
     margin-left: 10px;
-    width: 320px;
+    width: 300px;
     margin-left: 1px;
     z-index: 1;
-    height: 670px;
+    height: 550px;
     margin-bottom: 70px;
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
@@ -1617,12 +1618,12 @@ p{
 .topic p{
   text-transform: uppercase;
   text-decoration: dotted;
-  font-size: 1.3rem;
+  font-size: 1.rem;
   font-weight: 700;
   margin-left: 10px;
 }
 .topic ol{
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   margin: 2px;
 }
 
@@ -1703,8 +1704,8 @@ p{
     background-color:transparent;
     margin-top: -130px;
     height: 517px;
-    margin-left: 663px;
-    width: 227px;
+    margin-left: 660px;
+    width: 207px;
     transform: rotate(-2deg);
     position: fixed;
     border-radius: 40px;
@@ -1869,7 +1870,7 @@ p{
 
 .circle{
   border: 5px solid green;
-  background-color: transparent;
+  background-color: green;
   border-radius: 100px;
   height: 100px;
   width: 100px;
@@ -1910,12 +1911,13 @@ p{
 .tick{
   height: 50px;
   width: 10px;
-  border: 5px solid green;
-  margin-left: 80px;
+  border: 10px solid rgb(255, 255, 255);
+  margin-left: 70px;
   margin-top: 30px;
   transform: rotate(45deg);
   border-top: 0px;
   border-left: 0px;
+  border-bottom-right-radius: 5px;
 }
 
 .success-message{
@@ -1923,16 +1925,14 @@ p{
   text-align: center;
   justify-content: space-between;
   margin-top: 150px;
-  transform: rotate(-1deg);
 }
 
 @media(max-width:384px){
   #success-msg{
-    font-size:1.9rem;
+    font-size:1rem;
     text-align: center;
     justify-content: space-between;
     margin-top: 800px;
-    transform: rotate(-1.2deg);
 
   }
 }
@@ -1951,6 +1951,8 @@ p{
     margin-left: 40px;
     margin-top: 15px;
     border-radius: 1px;
+    border-bottom-right-radius: 5px;
+
   }
 }
 @media(min-width:670px){
@@ -1959,9 +1961,11 @@ p{
     border-left: 0px;
     height: 50px;
     width: 15px;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 15px;
     border-radius: 1px;
+    border-bottom-right-radius: 5px;
+
   }
 }
 
@@ -1971,9 +1975,11 @@ p{
     border-left: 0px;
     height: 50px;
     width: 15px;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 15px;
     border-radius: 1px;
+    border-bottom-right-radius: 5px;
+
   }
 }
 
@@ -2021,4 +2027,57 @@ p{
    20% { opacity:1; transform: translateX(3vw); }	
    80% { opacity:1; transform: translateX(-3vw); }	
   100% { opacity:0; transform: translateX(-5vw); }	
+}
+
+.candlads{
+  width: 300px;
+  height: 500px;
+  background-color: rgb(250, 228, 228);
+  margin-left: 80%;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 2;
+  transition: ease-in-out 2s;
+
+}
+
+@media (min-width: 385px)and (max-width: 670px){
+  #candlads{
+    width: 400px;
+    height: 600px;
+    background-color: rgb(250, 228, 228);
+    margin-left: 40%;
+    margin-top: -45%;
+    margin-bottom: 400px;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+    transition: ease-in-out 1s;
+
+
+
+  }
+}
+
+.close-ad-icon{
+  font-size: 3.5rem;
+  float: right;
+  margin-top: -25px;
+  background-color: rgb(255, 234, 234);
+  border-radius: 100px;
+  cursor: pointer;
+
+}
+
+.open-ad-icon{
+  font-size: 3.5rem;
+  font-size: 3.5rem;
+  float: right;
+  margin-top: -25px;
+  background-color: rgb(255, 234, 234);
+  border-radius: 100px;
+  cursor: pointer;
+  display: none;
+
 }
