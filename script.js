@@ -17,8 +17,8 @@ function closeAd(){
 
 function openAd(){
   document.getElementById("candlads").style.marginLeft = "1%";
-  document.getElementById("mobile-menu-ad").style.display = "none";
   document.getElementById("close-ad-bar").style.display = "block";
+  document.getElementById("candlads").style.display = "block";
   document.getElementById("overlay").style.display = "block";
 }
 
