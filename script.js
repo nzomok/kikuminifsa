@@ -8,25 +8,27 @@ function closeMenu() {
     }
 
 function closeAd(){
-  document.getElementById("candlads").style.marginTop = "-30%";
+  document.getElementById("candlads").style.marginLeft = "-100%";
   document.getElementById("close-ad-bar").style.display = "none";
-  document.getElementById("mobile-menu-ad").style.display = "block";
+  document.getElementById("overlay").style.display = "none";
 
 
   }
 
 function openAd(){
-  document.getElementById("candlads").style.marginTop = "-100%";
+  document.getElementById("candlads").style.marginLeft = "1%";
   document.getElementById("mobile-menu-ad").style.display = "none";
   document.getElementById("close-ad-bar").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
 }
 
 
-let x = document.getElementById("candlads");
+/* let x = document.getElementById("candlads");
 setInterval(function(){
-  x.style.marginTop = "-100%";
+  x.style.height = "900px";
+  x.style.marginTop = ("-100%");
   document.getElementById("open-ad-icon").style.display = "none";
-}, 20000);
+}, 20000); */
 
 
 

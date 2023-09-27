@@ -573,6 +573,7 @@ p{
   width: 165px;
   border-radius: 1px;
   align-content: center;
+  transition: ease-in-out;
 
 }
 
@@ -1483,7 +1484,7 @@ p{
 @media(min-width:385px) and (max-width:670px){
   #main-content{
     width: 680px;
-    height: 900px;
+    height: 950px;
 
 
   }
@@ -1513,16 +1514,7 @@ p{
 
 }
 
-.bank-slogan2{
-  color: rgb(0, 183, 255);
-  font-weight: 700;
-  font-family: monospace;
-  font-size: 1.5rem;
-  background-color: whitesmoke;
-  position: fixed;
-  padding: 20px;
 
-}
 
 @media(max-width:384px){
   #steps{
@@ -1636,17 +1628,6 @@ p{
 }
 
 
-@media(min-width:385px) and (max-width:670px){
-  #phonescreen{
-    display: block;
-    margin-left: -70px;
-    width: 200%;
-    margin-top: -45px;
-    margin-bottom: 0px;
-    z-index: 1;
-    position: fixed;
-  }
-}
 
 
 @media(max-width:384px){
@@ -1667,7 +1648,6 @@ p{
     margin-top: -350px;
     margin-bottom: 0px;
     z-index: 0;
-    position:fixed;
 
   }
 }
@@ -1701,28 +1681,25 @@ p{
 
 @media(min-width:670px){
   #steps-images-details{
-    background-color:transparent;
-    margin-top: -130px;
-    height: 517px;
-    margin-left: 660px;
-    width: 207px;
-    transform: rotate(-2deg);
+    background-color:wheat;
+    margin-top: -514px;
+    height: 460px;
+    margin-left: 175px;
+    width: 213px;
     position: fixed;
-    border-radius: 40px;
+    border-radius: 30px;
   }
 }
 
 @media(max-width:384px){
   #steps-images-details{
-    width: 260px;
-    height: 600px;
-    background-color:transparent;
-    margin-top: -60px;
+    width: 180px;
+    height: 390px;
+    background-color:wheat;
+    margin-top: -495px;
     border-radius: 30px;
-    margin-left: 840px;
-
+    margin-left: 845px;
     z-index: 1;
-    transform: rotate(-1.9deg);
     position: fixed;
 
     
@@ -1731,15 +1708,13 @@ p{
 
 @media(min-width:385px) and (max-width:670px){
   #steps-images-details{
-    width: 220px;
-    height: 500px;
-    margin-left: 365px;
+    width: 253px;
+    height: 540px;
+    margin-left: 205px;
     z-index: 1;
-    background-color:transparent;
-    margin-top: 140px;
+    background-color:rgba(245, 222, 179, 0.973);
+    margin-top: -605px;
     border-radius: 30px;
-    transform: rotate(-1.5deg);
-    position: fixed;
 
   }
 }
@@ -1753,13 +1728,15 @@ p{
 }
 @media(max-width:384px){
   #step-one{
-    width: 260px;
-    height: 590px;
+    width: 180px;
+    height: 380px;
     background-color: transparent;
-    margin-top: -630px;
+    margin-top: -20px;
     border-radius: 30px;
-    margin-left: 5px;
-    padding-top: 10px;
+    margin-left: 0px;
+    font-size: 0.8rem;
+
+    
   }
 }
 
@@ -1768,9 +1745,9 @@ p{
     width: 220px;
     height: 490px;
     margin-left: 10px;
-    margin-top: -70px;
+    margin-top: -30px;
     border-radius: 30px;
-    background-color: transparent;
+    background-color:wheat;
     z-index: 0;
 
   }
@@ -1779,7 +1756,7 @@ p{
 @media(min-width:670px){
   #step-one{
     height: 575px;
-    margin-top: -70px;
+    margin-top: -20px;
     border-radius: 30px;
     background-color: transparent;
 
@@ -1801,13 +1778,13 @@ p{
 
 @media(max-width:384px){
   #step-number{
-    margin-left: 200px;
-    margin-top: 530px;
+    margin-left: 100px;
 
 
 
   }
 }
+
 
 .step-number h1{
   text-align: center;
@@ -1874,8 +1851,8 @@ p{
   border-radius: 100px;
   height: 100px;
   width: 100px;
-  margin-left: 30%;
-  margin-top: 80%;
+  margin-left: 35%;
+  margin-top: 10%;
   justify-content: center;
 }
 
@@ -1898,10 +1875,10 @@ p{
 
 @media(max-width:384px){
   #circle{
-    height: 100px;
-    width: 100px;
-    margin-left: 30%;
-    margin-top: -160%;
+    height: 90px;
+    width: 90px;
+    margin-left: 25%;
+    margin-top: -40%;
   }
 }
 
@@ -1924,7 +1901,6 @@ p{
   font-size:1rem;
   text-align: center;
   justify-content: space-between;
-  margin-top: 150px;
 }
 
 @media(max-width:384px){
@@ -1932,7 +1908,7 @@ p{
     font-size:1rem;
     text-align: center;
     justify-content: space-between;
-    margin-top: 800px;
+    margin-top: 400px;
 
   }
 }
@@ -2031,41 +2007,97 @@ p{
 
 .candlads{
   width: 300px;
-  height: 500px;
-  background-color: rgb(250, 228, 228);
+  height: 800px;
+  background-color: rgb(14, 147, 209);
+  box-shadow: 0px 0px 12px 0px rgb(19, 72, 116);
   margin-left: 80%;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
   border-radius: 10px;
   position: fixed;
   z-index: 2;
-  transition: ease-in-out 2s;
+  transition: ease-in-out 1s;
 
 }
 
+.bank-slogan2{
+  color: rgb(242, 248, 250);
+  font-weight: 700;
+  font-family:sans-serif;
+  font-size: 1.9rem;
+  padding: 10px;
+
+}
+.candlads img{
+  width: 100%;
+  float: center;
+  margin-left: 0%;
+  z-index: 0;
+  border-radius: 20px;
+  background-color: transparent;
+  background-attachment: fixed;
+}
+
+@media(max-width: 384px){
+  #candlads{
+    width: 470px;
+    height: 900px;
+    margin-left: 1%;
+    margin-right: -3%;
+    margin-top: -60%;
+    position: -webkit-sticky;    z-index: 1;
+
+  }
+}
 @media (min-width: 385px)and (max-width: 670px){
   #candlads{
-    width: 400px;
-    height: 600px;
-    background-color: rgb(250, 228, 228);
-    margin-left: 40%;
-    margin-top: -45%;
+    width: 660px;
+    height: 900px;
+    background-color: rgb(3, 3, 40);
+    margin-left: 1%;
+    margin-right: -1%;
+    margin-top: -30%;
     margin-bottom: 400px;
     border-radius: 10px;
-    position: fixed;
-    z-index: 1;
-    transition: ease-in-out 1s;
+    position: -webkit-sticky;    z-index: 1;
+
+  }
+}
+
+@media (min-width:670px){
+  #candlads{
+    width: 560px;
+    margin-top: 0%;
+    height: 500px;
+    position: -webkit-sticky; z-index: 1;
+    margin-top: -17%;
+    z-index: 3;
 
 
 
   }
 }
 
+#overlay{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.451);
+  z-index: -1;
+  transition: ease-in-out 2s;
+}
+
 .close-ad-icon{
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   float: right;
-  margin-top: -25px;
+  margin-top: -35px;
+  padding: 20px;
   background-color: rgb(255, 234, 234);
-  border-radius: 100px;
+  border-radius: 10px;
   cursor: pointer;
 
 }
@@ -2075,7 +2107,7 @@ p{
   font-size: 3.5rem;
   float: right;
   margin-top: -25px;
-  background-color: rgb(255, 234, 234);
+    background-color: rgb(3, 3, 40);
   border-radius: 100px;
   cursor: pointer;
   display: none;
