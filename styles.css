@@ -1774,6 +1774,22 @@ p{
   z-index: 0;
   font-size: 0.9rem;
   position: relative;
+  animation: shake .9s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 @media(max-width:384px){
@@ -1796,12 +1812,10 @@ p{
     border-bottom-left-radius: 0px;
     margin-top: -40px;
     transform: rotate(5deg);
-
-
-
-
   }
 }
+
+
 
 
 @media(min-width:385px) and (max-width:670px){
@@ -2040,7 +2054,7 @@ p{
   width: 300px;
   height: 800px;
   background-color: rgb(14, 147, 209);
-  box-shadow: 0px 0px 12px 0px rgb(19, 72, 116);
+  box-shadow: 5px 5px 5px 5px white;
   margin-left: 80%;
   margin-bottom: 0px;
   border-radius: 10px;
@@ -2064,10 +2078,13 @@ p{
   float: center;
   margin-left: 0%;
   z-index: 0;
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: transparent;
   background-attachment: fixed;
+
 }
+
+
 
 @media(max-width: 384px){
   #candlads{
@@ -2098,10 +2115,9 @@ p{
 @media (min-width:670px){
   #candlads{
     width: 560px;
-    margin-top: 0%;
     height: 500px;
     position: -webkit-sticky; z-index: 1;
-    margin-top: -17%;
+    margin-top: -20%;
     z-index: 3;
 
 
@@ -2124,14 +2140,36 @@ p{
 }
 
 .close-ad-icon{
-  font-size: 2.5rem;
-  float: right;
-  margin-top: -35px;
-  padding: 20px;
-  background-color: rgb(255, 234, 234);
-  border-radius: 10px;
+  font-size: 4rem;
+  margin-left: 500px;
+  margin-top: -20px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 100px;
   cursor: pointer;
+  color: rgb(255, 255, 255);
 
+}
+
+.close-ad-icon:hover{
+  color: red;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+@media(min-width:385px) and (max-width:670px){
+  #close-ad-bar{
+    margin-left: 600px;
+
+  }
+}
+
+@media(max-width:384px){
+  #close-ad-bar{
+    margin-left: 400px;
+    font-size: 5rem;
+
+  }
 }
 
 .open-ad-icon{
@@ -2210,7 +2248,14 @@ p{
   position: absolute;
   margin-left: 120px;
   margin-top: -120px;
+  animation: beat .15s infinite alternate;
+  transform-origin: center;
 }
+
+@keyframes beat{
+  to{transform:scale(1.1);}
+}
+
 .sticker:before {
   height: 2.9em;
   width: 2.9em;
