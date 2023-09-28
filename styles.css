@@ -1731,7 +1731,7 @@ p{
     width: 180px;
     height: 380px;
     background-color: transparent;
-    margin-top: -20px;
+    margin-top: -70px;
     border-radius: 30px;
     margin-left: 0px;
     font-size: 0.8rem;
@@ -1745,7 +1745,7 @@ p{
     width: 220px;
     height: 490px;
     margin-left: 10px;
-    margin-top: -30px;
+    margin-top: -70px;
     border-radius: 30px;
     background-color:wheat;
     z-index: 0;
@@ -1756,7 +1756,7 @@ p{
 @media(min-width:670px){
   #step-one{
     height: 575px;
-    margin-top: -20px;
+    margin-top: -70px;
     border-radius: 30px;
     background-color: transparent;
 
@@ -1778,7 +1778,38 @@ p{
 
 @media(max-width:384px){
   #step-number{
-    margin-left: 100px;
+    margin-left: 200px;
+    border-bottom-left-radius: 0px;
+    margin-top: -40px;
+    transform: rotate(5deg);
+
+
+
+
+  }
+}
+
+
+@media(min-width:670px){
+  #step-number{
+    margin-left: 230px;
+    border-bottom-left-radius: 0px;
+    margin-top: -40px;
+    transform: rotate(5deg);
+
+
+
+
+  }
+}
+
+
+@media(min-width:385px) and (max-width:670px){
+  #step-number{
+    margin-left: 270px;
+    border-bottom-left-radius: 0px;
+    margin-top: -40px;
+    transform: rotate(5deg);
 
 
 
@@ -2015,17 +2046,17 @@ p{
   border-radius: 10px;
   position: fixed;
   z-index: 2;
-  transition: ease-in-out 1s;
+  transition: ease-in-out 0.5s;
   display:none;
 
 }
 
 .bank-slogan2{
   color: rgb(242, 248, 250);
-  font-weight: 700;
-  font-family:sans-serif;
-  font-size: 1.9rem;
-  padding: 10px;
+  font-family:IBM Plex Mono,sans-serif;
+  font-size: 1.3rem;
+  padding: 1px;
+  margin-bottom: 10px;
 
 }
 .candlads img{
@@ -2089,7 +2120,7 @@ p{
   left: 0;
   background-color: rgba(0, 0, 0, 0.451);
   z-index: -1;
-  transition: ease-in-out 2s;
+  transition: ease-in-out 0.5s;
 }
 
 .close-ad-icon{
@@ -2113,4 +2144,89 @@ p{
   cursor: pointer;
   display: none;
 
+}/* New Sticker */
+.new-sticker {
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  z-index: 5;
 }
+
+@media(min-width:385px) and (max-width:670px){
+  #new-sticker{
+    margin-top: -120px;
+    margin-left: 140px;
+
+  }
+}
+@media(max-width:384px){
+  #new-sticker{
+    margin-top: -100px;
+    margin-left: 90px;
+
+  }
+}
+.new {
+  background-color: orange;
+  color: #0b63b4;
+  font: .9em/1 'Archivo Narrow', sans-serif;
+  letter-spacing: .09em;
+  position: absolute;
+  transform: rotate(-15deg);
+  margin-left: 125px;
+  margin-top: -105px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+@media(min-width:385px) and (max-width:670px){
+  #new{
+    background-color: orange;
+    color: #0b63b4;
+    margin-left: 145px;
+    margin-top: -110px;
+    font: .9em/2 'Archivo Narrow', sans-serif;
+    font-weight: 700;
+
+  }
+}
+@media(max-width:384px){
+  #new{
+    background-color: orange;
+    color: #0b63b4;
+    margin-left: 95px;
+    margin-top: -85px;
+    font: .8em/1 'Archivo Narrow', sans-serif;
+    font-weight: 700;
+
+  }
+}
+
+
+.sticker {
+  height: 2.9em;
+  width: 2.9em;
+  background: rgb(255, 166, 0);
+  position: absolute;
+  margin-left: 120px;
+  margin-top: -120px;
+}
+.sticker:before {
+  height: 2.9em;
+  width: 2.9em;
+  background: orange;
+  content:"";
+  position: absolute;
+  /* Rotate */
+  transform: rotate(30deg);
+}
+.sticker:after {
+  height: 2.9em;
+  width: 2.9em;
+  background: orange;
+  content:"";
+  position: absolute;
+  /* Rotate */
+  transform: rotate(-30deg);
+}
+
