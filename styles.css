@@ -78,7 +78,7 @@ h3{
 
 .darshboard{
     margin-left: 0%;
-    width: 350px;
+    width: 450px;
     height:100%;
     align-content: left;
     background-color: rgb(246, 252, 255);
@@ -87,6 +87,7 @@ h3{
     transition: ease-in-out 0.5s;
     display: none;
     z-index: 2;
+    overflow: scroll;
 }
 
 #overlay-sidebar{
@@ -129,10 +130,13 @@ h3{
 .disclamer-sidebar{
   background-color: rgb(3, 3, 40);
   display: block;
-  width: 100%;
   margin-top: 50px;
+  width: 450px;
   height: 100px;
   padding-top: 40px;
+  bottom: 0px;
+  position: fixed;
+
 
 
 }
@@ -196,7 +200,7 @@ h3{
 
 }
 .home:hover{
-  background-color: rgb(6, 81, 110);
+  background-color: rgb(0, 169, 236);
   cursor: pointer;
 }
 
@@ -207,13 +211,13 @@ h3{
 
 .fsa-home a{
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   font-family: monospace;
   margin-left: 10px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .services{
@@ -222,9 +226,10 @@ h3{
   display: flex;
   align-items: center;
   margin-bottom: 0px;
+  padding: 5px;
 }
 .fsa-services{
-  height: fit-content;
+  height:auto;
   width: 100%;
   margin-bottom: 0px;
   justify-content: center;
@@ -240,12 +245,12 @@ h3{
 
 .fsa-services a{
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   font: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
-  font-weight: 200;
+  font-weight: 600;
   
 }
 
@@ -257,7 +262,7 @@ h3{
   padding: 5px;
 }
 .contacts-us:hover{
-  background-color: rgb(6, 81, 110);
+  background-color: rgb(0, 169, 236);
   cursor: pointer;
 
 
@@ -273,11 +278,11 @@ h3{
 
 .fsa-contacts a{
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   font: quicksand;
   text-align: center;
   margin-left: 10px;
-  font-weight: 200;
+  font-weight: 600;
   color: rgb(4, 12, 61);
 
 }
@@ -290,7 +295,7 @@ h3{
   padding: 5px;
 }
 .payments:hover{
-  background-color: rgb(6, 81, 110);
+  background-color: rgb(0, 169, 236);
   cursor: pointer;
 
 }
@@ -304,12 +309,12 @@ h3{
 
 .fsa-payments a{
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   font: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
-  font-weight:200 ;
+  font-weight:600 ;
 }
 
 .staff{
@@ -321,7 +326,7 @@ h3{
 }
 
 .staff:hover{
-  background-color: rgb(6, 81, 110);
+  background-color: rgb(0, 169, 236);
   cursor: pointer;
 }
 .fsa-team{
@@ -333,12 +338,12 @@ h3{
 
 .fsa-team a{
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   font: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
-  font-weight: 200;
+  font-weight: 600;
 }
 
 .partners{
@@ -356,19 +361,19 @@ h3{
 }
 
 .partners:hover{
-  background-color: rgb(6, 81, 110);
+  background-color: rgb(0, 169, 236);
   cursor: pointer;
 }
 
 
 .fsa-partners a{
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   font: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
-  font-weight: 200;
+  font-weight: 600;
 }
 
 .events{
@@ -386,21 +391,30 @@ padding: 5px;
 }
 
 .events:hover{
-background-color: rgb(6, 81, 110);
+  background-color: rgb(0, 169, 236);
 cursor: pointer;
-border-radius: 10px;
-border-bottom-right-radius: 100px;
-border-top-right-radius: 100px;
+
 }
 
 .fsa-events a{
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   font: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
-  font-weight: 200;
+  font-weight: 600;
+}
+
+.contact-us{
+  bottom: 140px;
+  position: fixed;
+  width: 450px;
+  font: quicksand;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  background-color: rgb(0, 169, 236);
 }
 
 /* start on the home main page */
