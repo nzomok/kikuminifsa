@@ -95,7 +95,7 @@
 </div>
 <div class="quick-links" id="links">
     <div class="tariffs" id="more-link">
-        <a href="#"><img src="save-money.png" alt="" id="tarrif-img">
+        <a href="save.html"><img src="save-money.png" alt="" id="tarrif-img">
         <h4 class="tariffs-tag2">How to Save</h4>
         </a>
     </div>
@@ -130,9 +130,6 @@
     </div>
 
 </div>
-
-
-
 
 
 <div class="candlads"  id="candlads">
@@ -459,38 +456,26 @@
         </div>
     </div>
 
+    </div>
+    <script>
+            var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                var i;
+                var x = document.getElementsByClassName("steps-images-details");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 5000); // Change image every 5 seconds
+                }
+        </script> 
+
+
 </div>
-<script>
-        var myIndex = 0;
-            carousel();
-
-            function carousel() {
-            var i;
-            var x = document.getElementsByClassName("steps-images-details");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 5000); // Change image every 5 seconds
-            }
-    </script> 
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

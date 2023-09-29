@@ -2065,14 +2065,6 @@ p{
 
 }
 
-.bank-slogan2{
-  color: rgb(242, 248, 250);
-  font-family:IBM Plex Mono,sans-serif;
-  font-size: 1.3rem;
-  padding: 1px;
-  margin-bottom: 10px;
-
-}
 .candlads img{
   width: 100%;
   float: center;
@@ -2274,4 +2266,182 @@ p{
   /* Rotate */
   transform: rotate(-30deg);
 }
+
+
+/* HOW TO SAVE PAGE*/
+
+.savings-accounts{
+  height: auto;
+  background-color: rgb(243, 234, 234);
+  width: 100%;
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+
+.savings-accounts h2{
+  font-size: 42px;
+  font: quicksand;
+  margin-left:150px;
+  color: rgb(6, 44, 59);
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+
+.about-savings-account{
+  border-top: 1px solid rgba(9, 7, 77, 0.173);
+  margin-left: 0px;
+  padding-right: 50px;
+} 
+
+@media(max-width:384px){
+  #savings-accounts p{
+    left: 0;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+} 
+@media(min-width:385px) and (max-width:670px){
+  #savings-accounts p{
+    left: 0;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+} 
+
+.about-savings-account p{
+  font-size: 20px;
+  font: quicksand;
+  color: #020e19;
+  margin-left: 150px;
+  font-weight: 10;
+}
+
+.benefits{
+  display: block;
+  background-color: white;
+  height: 400px;
+  padding: 20px;
+  overflow: scroll;
+}
+ .benefits h2{
+  font-size: 42px;
+  font: quicksand;
+  margin-left:130px;
+  color: rgb(6, 44, 59);
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  padding-right: 20px;
+
+
+ }
+
+ .list{
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 40px;
+ }
+
+ @media(max-width:384px){
+  #lists{
+    overflow:scroll;
+    display: block;
+  }
+ }
+
+ @media(min-width:385px) and (max-width:670px){
+  #lists{
+    overflow:scroll;
+    display: block;
+  }
+ }
+
+.benefit{
+  height: 200px;
+  width: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.319);
+  border-radius: 20px;
+  background-color: whitesmoke;
+  cursor: pointer;
+  margin-left: 50px;
+  box-shadow: 0px 10px 20px 0 rgba(0, 1, 0, 0.25);
+}
+
+@media(max-width:384px){
+  #benefit{
+    width: 95%;
+    position: relative;
+    height: 190px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+@media(min-width:385px) and (max-width:670px){
+  #benefit{
+    width: 600px;
+    position: relative;
+    height: 190px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+
+}
+
+.list h3{
+  text-decoration: underline;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align:left;
+  text-transform: capitalize;
+  font: quicksand;
+  color: rgb(4, 6, 126);
+
+}
+
+.text{
+  padding: 3px;
+  font: quicksand;
+  text-decoration: none;
+  text-align: left;
+  font-size: 18px;
+  color: rgb(17, 8, 90);
+  margin-right: 10px;
+
+
+}
+
+
+.benefit a{
+  text-align: center;
+  text-decoration: none;
+  color: rgb(31, 8, 116);
+  text-transform: uppercase;
+  font: quicksand;
+  font-weight: 900;
+  margin-left: 45px;
+  margin-top: 1px;
+  background-color: wheat;
+  border-radius: 10px;
+  padding:10px ;
+  padding-left: 10px;
+  padding-right: 10px;
+  animation: beat .40s infinite alternate;
+  transform-origin: center;
+  position: absolute;
+}
+
+@keyframes beat{
+  to{transform:scale(1.1);}
+}
+
+
+
 
