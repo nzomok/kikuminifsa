@@ -77,21 +77,71 @@ h3{
 
 
 .darshboard{
-    display: none;
-    margin-top: 93px;
-    border: 1px solid skyblue;
-    width: auto;
-    min-width: 300px;
-    max-width: 400px;
-    height: 600px;
+    margin-left: 0%;
+    width: 350px;
+    height:100%;
     align-content: left;
-    background-color: rgb(0, 183, 255);
+    background-color: rgb(246, 252, 255);
     box-shadow: 2px 1px 9px -3px rgb(0, 0, 0);
-    transition:0.5s ease-out;
     position: fixed;
-    z-index: 1;
+    transition: ease-in-out 0.5s;
+    display: none;
+    z-index: 2;
 }
 
+#overlay-sidebar{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.451);
+  z-index: 1;
+  transition: ease-in-out 0.5s;
+}
+
+.top-sidebar{
+  background-color: rgb(0, 183, 255);
+  height: 100px;
+}
+.top-sidebar img{
+  width: 30%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  margin-top: -40px;
+  margin-left: 10px;
+
+}
+
+.top-sidebar h2 {
+  font: quicksand;
+  font-weight: 600;
+  margin-left: 140px;
+  margin-top: -40px;
+  font-size: 22px;
+
+}
+
+
+.disclamer-sidebar{
+  background-color: rgb(3, 3, 40);
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+  height: 100px;
+  padding-top: 40px;
+
+
+}
+
+.disclamer-sidebar p{
+  text-align: center;
+  margin-left: 0px;
+  color: whitesmoke;
+}
 
 .open-menu-icon{
   font-size: 30px;
@@ -111,8 +161,8 @@ h3{
 
 
 .close-menu-icon{
-  font-size: 40px;
-  margin-left: 85%;
+  font-size: 50px;
+  margin-left: 89%;
   cursor: pointer;
   color: red;
 }
@@ -148,9 +198,6 @@ h3{
 .home:hover{
   background-color: rgb(6, 81, 110);
   cursor: pointer;
-  border-radius: 10px;
-  border-bottom-right-radius: 100px;
-  border-top-right-radius: 100px;
 }
 
 .fsa-home{
@@ -161,11 +208,12 @@ h3{
 .fsa-home a{
   text-decoration: none;
   font-size: 1.5rem;
-  font: bold;
-  color: whitesmoke;
+  font: quicksand;
+  color: rgb(4, 12, 61);
   text-align: center;
   font-family: monospace;
-  margin-left: 60px;
+  margin-left: 10px;
+  font-weight: 400;
 }
 
 .services{
@@ -174,7 +222,6 @@ h3{
   display: flex;
   align-items: center;
   margin-bottom: 0px;
-  padding: 5px;
 }
 .fsa-services{
   height: fit-content;
@@ -183,12 +230,9 @@ h3{
   justify-content: center;
   padding: 5px;
 }
-.fsa-services:hover{
-  background-color: rgb(6, 81, 110);
+.services:hover{
+  background-color: rgb(0, 169, 236);
   cursor: pointer;
-  border-radius: 10px;
-  border-bottom-right-radius: 100px;
-  border-top-right-radius: 100px;
 
 
 }
@@ -196,12 +240,12 @@ h3{
 
 .fsa-services a{
   text-decoration: none;
-  font-size: 1.5rem;
-  font: bold;
-  color: whitesmoke;
+  font-size: 1.2rem;
+  font: quicksand;
+  color: rgb(4, 12, 61);
   text-align: center;
-  font-family: monospace;
-  margin-left: 60px;
+  margin-left: 10px;
+  font-weight: 200;
   
 }
 
@@ -215,9 +259,7 @@ h3{
 .contacts-us:hover{
   background-color: rgb(6, 81, 110);
   cursor: pointer;
-  border-radius: 10px;
-  border-bottom-right-radius: 100px;
-  border-top-right-radius: 100px;
+
 
 }
 
@@ -231,12 +273,13 @@ h3{
 
 .fsa-contacts a{
   text-decoration: none;
-  font-size: 1.5rem;
-  font: bold;
-  color: whitesmoke;
+  font-size: 1.2rem;
+  font: quicksand;
   text-align: center;
-  font-family: monospace;
-  margin-left: 60px;
+  margin-left: 10px;
+  font-weight: 200;
+  color: rgb(4, 12, 61);
+
 }
 
 .payments{
@@ -249,9 +292,6 @@ h3{
 .payments:hover{
   background-color: rgb(6, 81, 110);
   cursor: pointer;
-  border-radius: 10px;
-  border-bottom-right-radius: 100px;
-  border-top-right-radius: 100px;
 
 }
 
@@ -264,12 +304,12 @@ h3{
 
 .fsa-payments a{
   text-decoration: none;
-  font-size: 1.5rem;
-  font: bold;
-  color: whitesmoke;
+  font-size: 1.2rem;
+  font: quicksand;
+  color: rgb(4, 12, 61);
   text-align: center;
-  font-family: monospace;
-  margin-left: 60px;
+  margin-left: 10px;
+  font-weight:200 ;
 }
 
 .staff{
@@ -283,10 +323,6 @@ h3{
 .staff:hover{
   background-color: rgb(6, 81, 110);
   cursor: pointer;
-  border-radius: 10px;
-  border-bottom-right-radius: 100px;
-  border-top-right-radius: 100px;
-
 }
 .fsa-team{
   width: auto;
@@ -297,12 +333,12 @@ h3{
 
 .fsa-team a{
   text-decoration: none;
-  font-size: 1.5rem;
-  font: bold;
-  color: whitesmoke;
+  font-size: 1.2rem;
+  font: quicksand;
+  color: rgb(4, 12, 61);
   text-align: center;
-  font-family: monospace;
-  margin-left: 60px;
+  margin-left: 10px;
+  font-weight: 200;
 }
 
 .partners{
@@ -322,20 +358,17 @@ h3{
 .partners:hover{
   background-color: rgb(6, 81, 110);
   cursor: pointer;
-  border-radius: 10px;
-  border-bottom-right-radius: 100px;
-  border-top-right-radius: 100px;
 }
 
 
 .fsa-partners a{
   text-decoration: none;
-  font-size: 1.5rem;
-  font: bold;
-  color: whitesmoke;
+  font-size: 1.2rem;
+  font: quicksand;
+  color: rgb(4, 12, 61);
   text-align: center;
-  font-family: monospace;
-  margin-left: 60px;
+  margin-left: 10px;
+  font-weight: 200;
 }
 
 .events{
@@ -362,12 +395,12 @@ border-top-right-radius: 100px;
 
 .fsa-events a{
   text-decoration: none;
-  font-size: 1.5rem;
-  font: bold;
-  color: whitesmoke;
+  font-size: 1.2rem;
+  font: quicksand;
+  color: rgb(4, 12, 61);
   text-align: center;
-  font-family: monospace;
-  margin-left: 60px;
+  margin-left: 10px;
+  font-weight: 200;
 }
 
 /* start on the home main page */
@@ -1426,8 +1459,7 @@ p{
   width: 1539px;
   height: 100px;
   padding-top: 40px;
-  z-index: 1;
-  position: absolute;
+
 
 }
 
@@ -2052,9 +2084,8 @@ p{
 
 .candlads{
   width: 300px;
-  height: 800px;
+  height: auto;
   background-color: rgb(14, 147, 209);
-  box-shadow: 5px 5px 5px 5px white;
   margin-left: 80%;
   margin-bottom: 0px;
   border-radius: 10px;
@@ -2063,6 +2094,13 @@ p{
   transition: ease-in-out 0.5s;
   display:none;
 
+}
+
+.candlads p{
+  color: white;
+  font: quicksand;
+  font-size: 22px;
+  font-weight: 200;
 }
 
 .candlads img{
@@ -2301,6 +2339,19 @@ p{
     left: 0;
     text-align: left;
     margin-left: 30px;
+    font-size: 18px;
+    font: quicksand;
+  }
+
+} 
+
+@media(max-width:384px){
+  #savings-accounts h2{
+    left: 0;
+    text-align: left;
+    margin-left: 30px;
+    font: quicksand;
+    font-size: 25px;
   }
 
 } 
@@ -2309,16 +2360,29 @@ p{
     left: 0;
     text-align: left;
     margin-left: 30px;
+    font-size: 18px;
+    font: quicksand;
   }
 
 } 
+@media(min-width:385px) and (max-width:670px){
+  #savings-accounts h2{
+    left: 0;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 32px;
+    font: quicksand;
+  }
+
+} 
+
 
 .about-savings-account p{
   font-size: 20px;
   font: quicksand;
   color: #020e19;
   margin-left: 150px;
-  font-weight: 10;
+  font-weight: 400;
 }
 
 .benefits{
@@ -2337,13 +2401,32 @@ p{
   margin-bottom: 10px;
   padding-right: 20px;
 
-
  }
+
+ @media(max-width:384px){
+  #benefits h2 {
+    font-size: 25px;
+    font-weight: 700;
+    font: quicksand;
+    margin-left: 20px;
+  }
+ }
+
+
+ @media(min-width:385px) and (max-width:670px){
+  #benefits h2{
+    font: quicksand;
+    font-size: 32px ;
+    margin-left: 10px;
+  }
+
+}
 
  .list{
   display: flex;
   margin-bottom: 10px;
   margin-top: 40px;
+
  }
 
  @media(max-width:384px){
@@ -2442,6 +2525,224 @@ p{
   to{transform:scale(1.1);}
 }
 
+.what-we-need{
+  display: flex;
+  background-color: rgb(238, 238, 238);
+  border: 1px solid rgba(0, 0, 0, 0.329);
+  border-left: 0px;
+  border-right: 0px;
+  height: auto;
+}
+
+@media(max-width:384px){
+  #what-we-need{
+    display: block;
+  }
+}
+
+@media(min-width:385px) and (max-width:670px){
+  #what-we-need{
+    display: block;
+  }
+}
+
+.requirements{
+  display: block;
+  margin-left: 10px;
+
+}
 
 
 
+.what-we-need-from-you{
+  font: quicksand;
+  text-align: left;
+  border-bottom: 2px solid rgba(7, 83, 155, 0.185);
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.what-we-need-from-you h1, ul{
+  margin-left: 150px;
+  text-transform: capitalize;
+}
+.what-we-need-from-you ul{
+  font: quicksand;
+  font-size: 23px;
+  font-weight: 600;
+  color: rgb(4, 104, 143);
+}
+.what-we-need-from-you p{
+  text-transform: capitalize;
+  font: quicksand;
+  font-size: 18px;
+  margin-left: 150px;
+  font-weight: 300;
+}
+
+@media(max-width:384px){
+  #what-we-need-from-you ul,#what-we-need-from-you h1,#what-we-need-from-you p{
+    display: block;
+    margin-left: 10px;
+    font-size: 18px;
+
+  }
+}
+@media(min-width:385px)and (max-width:670px){
+  #what-we-need-from-you ul,#what-we-need-from-you h1,#what-we-need-from-you p{
+    display: block;
+    margin-left: 20px;
+    font-size: 18px;
+
+  }
+}
+
+
+
+.account-rates h1, ul{
+  margin-left: 150px;
+  text-transform: capitalize;
+}
+.account-rates ul{
+  font: quicksand;
+  font-size: 23px;
+  font-weight: 600;
+  color: rgb(6, 64, 87);
+}
+
+@media(max-width:384px){
+  #account-rates ul,#account-rates h1{
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
+@media(min-width:385px) and (max-width:670px){
+  #account-rates ul,#account-rates h1{
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+
+  }
+}
+
+
+
+.more-accounts{
+  background-color: #f1f8ff;
+  height: auto;
+  width: 600px;
+  margin: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  display: block;
+  z-index: 0;
+  padding-bottom: 20px;
+  position: relative;
+  box-shadow: 0px 10px 20px 0 rgba(0, 1, 0, 0.25);
+}
+
+
+@media(min-width:385px) and (max-width:670px){
+  #more-accounts{
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    width: 650px;
+    margin-top: 40px;
+
+  }
+}
+
+@media(max-width:384px){
+  #more-accounts{
+    display: block;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    width: 474px;
+    margin-top: 40px;
+
+  }
+}
+
+
+.others-liked{
+  text-align: center;
+  background-color: rgb(215, 213, 226);
+  border-top-right-radius: 00px;
+
+}
+
+.others-liked h1{
+  font: quicksand;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.shares{
+  height: 150px;
+  background-color: rgba(236, 224, 210, 0.699);
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  width: 500px;
+  position: relative;
+  display: flex;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0px 10px 20px 0 rgba(0, 1, 0, 0.25);
+}
+
+@media(max-width:384px){
+  #shares {
+    font-size: 28px;
+    font-weight: 200;
+    width: 400px;
+    height: fit-content;
+  }
+}
+
+@media(min-width:385px) and (max-width:670px){
+  #shares {
+    font-size: 22px;
+    font-weight: 200;
+    width: 600px;
+    height: fit-content;
+  }
+}
+
+
+@media(max-width:384px){
+  #shares h1, #shares h2{
+    font-size: 28px;
+    font-weight: 200;
+  }
+}
+
+@media(min-width:385px) and (max-width:670px){
+  #shares h1, #shares h2{
+    font-size: 28px;
+    font-weight: 200;
+  }
+}
+
+.shares h1{
+  margin-top: 10px;
+  margin-left: 80px;
+  font: quicksand;
+  font-size: 32px;
+
+}
+
+.shares h2{
+  margin-left: 10px;
+  font-size: 22px;
+  font: quicksand;
+  text-transform: capitalize;
+  margin-top: 20px;
+}

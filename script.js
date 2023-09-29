@@ -1,11 +1,16 @@
 function openMenu() {
-    document.getElementById("sidebar").style.display = "block";
+  document.getElementById("sidebar").style.marginLeft = "0%";
+  document.getElementById("sidebar").style.display = "block";
+  document.getElementById("overlay-sidebar").style.display = "block";
+
 }
 
 
 function closeMenu() {
-        document.getElementById("sidebar").style.display = "none";
-    }
+    document.getElementById("sidebar").style.marginLeft = "-100%";
+    document.getElementById("overlay-sidebar").style.display = "none";
+
+  }
 
 function closeAd(){
   document.getElementById("candlads").style.marginLeft = "-100%";
