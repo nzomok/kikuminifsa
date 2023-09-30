@@ -28,6 +28,13 @@ html {
     box-shadow: -1px -1px 10px 1px black;
 
 }
+
+.icon{
+  object-fit: contain;
+  border-radius: 50px;
+  aspect-ratio: 3/1;
+  width: 100%;
+}
 .bank_logo{
     display: block;
     height: auto;
@@ -87,7 +94,6 @@ h3{
     transition: ease-in-out 0.5s;
     display: none;
     z-index: 2;
-    overflow: scroll;
 }
 
 #overlay-sidebar{
@@ -211,13 +217,13 @@ h3{
 
 .fsa-home a{
   text-decoration: none;
-  font-size: 1.9rem;
+  font-size: 1.3rem;
   font: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   font-family: monospace;
   margin-left: 10px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .services{
@@ -245,12 +251,12 @@ h3{
 
 .fsa-services a{
   text-decoration: none;
-  font-size: 1.9rem;
+  font-size: 1.3rem;
   font: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
-  font-weight: 600;
+  font-weight: 400;
   
 }
 
@@ -260,6 +266,7 @@ h3{
   display: flex;
   align-items: center;
   padding: 5px;
+  
 }
 .contacts-us:hover{
   background-color: rgb(0, 169, 236);
@@ -278,11 +285,11 @@ h3{
 
 .fsa-contacts a{
   text-decoration: none;
-  font-size: 1.9rem;
+  font-size: 1.3rem;
   font: quicksand;
   text-align: center;
   margin-left: 10px;
-  font-weight: 600;
+  font-weight: 400;
   color: rgb(4, 12, 61);
 
 }
@@ -309,12 +316,12 @@ h3{
 
 .fsa-payments a{
   text-decoration: none;
-  font-size: 1.9rem;
+  font-size: 1.3rem;
   font: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
-  font-weight:600 ;
+  font-weight:400 ;
 }
 
 .staff{
@@ -338,12 +345,12 @@ h3{
 
 .fsa-team a{
   text-decoration: none;
-  font-size: 1.9rem;
+  font-size: 1.3rem;
   font: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .partners{
@@ -368,12 +375,12 @@ h3{
 
 .fsa-partners a{
   text-decoration: none;
-  font-size: 1.9rem;
+  font-size: 1.3rem;
   font: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .events{
@@ -398,12 +405,12 @@ cursor: pointer;
 
 .fsa-events a{
   text-decoration: none;
-  font-size: 1.9rem;
+  font-size: 1.3rem;
   font: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .contact-us{
