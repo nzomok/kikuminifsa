@@ -124,7 +124,7 @@ h3{
 #loancal{
   width: 70%;
   height: 550px;
-  background-color: rgb(6, 6, 70);
+  background-color: rgb(4, 29, 44);
   margin-left: 260px;
   margin-top: 40px;
   border-radius: 10px;
@@ -174,8 +174,8 @@ h3{
 #loancal p{
   text-transform: capitalize;
   font: quicksand;
-  font-weight: 100;
-  color: #ffffff;
+  font-weight: 600;
+  color: #050c4b;
   font-size: 20px;
 
 }
@@ -187,20 +187,20 @@ h3{
 }
 
 #loancal h2{
-  font: quicksand;
-  text-align:left;
+  font: raleway;
   color: rgb(255, 0, 0);
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: 10px;
-  font-size:22px;
+  font-size:25px;
   font-weight: 600;
 }
 
 .input{
   margin-left: 0px;
   margin-right: 0px;
+  border-top-right-radius: 5px;
   width: 60%;
-  background-color: rgba(245, 245, 245, 0.13);
+  background-color: rgb(0, 183, 255);
 }
 
 @media(min-width:385px) and (max-width:670px){
@@ -246,15 +246,16 @@ input{
 
 }
 .numbers{
-  background-color:rgb(240, 237, 233);
+  background-color: rgb(255, 255, 255);
   width: 500px;
   margin-left: 0px;
-  margin-top: 0px;
+  margin-top: 5px;
   height: 250px;
   box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
   flex-wrap: wrap;
   position: relative;
   z-index: 0;
+  text-align: left;
 }
 
 @media(min-width:385px) and (max-width:670px){
@@ -2426,7 +2427,7 @@ p{
   display: none;
 
 }/* New Sticker */
-.new-sticker {
+/*.new-sticker {
   margin: 0;
   position: relative;
   display: inline-block;
@@ -2505,7 +2506,7 @@ p{
   background: orange;
   content:"";
   position: absolute;
-  /* Rotate */
+  /* Rotate 
   transform: rotate(30deg);
 }
 .sticker:after {
@@ -2514,9 +2515,9 @@ p{
   background: orange;
   content:"";
   position: absolute;
-  /* Rotate */
+  /* Rotate 
   transform: rotate(-30deg);
-}
+} */
 
 
 /* HOW TO SAVE PAGE*/

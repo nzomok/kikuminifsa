@@ -89,6 +89,8 @@ function computeloan(){
     let payment = ((amount / months) + interest).toFixed(0);
     let total_pay = (payment * months ).toFixed(0);
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+    total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+
     document.querySelector('#entered-amount').innerHTML = `Amount Entered: Ksh ${amount}`
     document.querySelector('#payment').innerHTML = `Monthly payment: Ksh ${payment}`
     document.querySelector('#total-payment').innerHTML = `Total payment: Ksh ${total_pay}`
@@ -107,6 +109,7 @@ function computeloan(){
     let payment = ((amount / months) + interest).toFixed(0);
     let total_pay = (payment * months ).toFixed(0);
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+    total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     document.querySelector('#entered-amount').innerHTML = `Amount Entered: Ksh ${amount}`
     document.querySelector('#payment').innerHTML = `Monthly payment: Ksh ${payment}`    
     document.querySelector('#total-payment').innerHTML = `Total payment:  Ksh ${total_pay}`
@@ -121,6 +124,7 @@ function computeloan(){
     let payment = ((amount / months) + interest).toFixed(0);
     let total_pay = (payment * months ).toFixed(0);
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+    total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     document.querySelector('#entered-amount').innerHTML = `Amount Entered: Ksh ${amount}`
     document.querySelector('#payment').innerHTML = `Monthly payment: Ksh ${payment}`
     document.querySelector('#total-payment').innerHTML = `Total payment:  Ksh ${total_pay}`
@@ -134,6 +138,7 @@ function computeloan(){
     let payment = ((amount / months) + interest).toFixed(0);
     let total_pay = (payment * months ).toFixed(0);
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+    total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     document.querySelector('#entered-amount').innerHTML = `Amount Entered: Ksh ${amount}`
     document.querySelector('#payment').innerHTML = `Monthly payment: Ksh ${payment}`    
     document.querySelector('#total-payment').innerHTML = `Total payment: Ksh ${total_pay}`
@@ -147,6 +152,7 @@ function computeloan(){
     let payment = ((amount / months) + interest).toFixed(0);
     let total_pay = (payment * months ).toFixed(0);
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+    total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     document.querySelector('#entered-amount').innerHTML = `Amount Entered: Ksh ${amount}`
     document.querySelector('#payment').innerHTML = `Monthly payment: Ksh ${payment}`    
     document.querySelector('#total-payment').innerHTML = `Total payment: Ksh ${total_pay}`
@@ -160,6 +166,7 @@ function computeloan(){
     let payment = ((amount / months) + interest).toFixed(0);
     let total_pay = (payment * months ).toFixed(0);
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+    total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     document.querySelector('#entered-amount').innerHTML = `Amount Entered: Ksh ${amount}`
     document.querySelector('#payment').innerHTML = `Monthly payment: Ksh ${payment}`
     document.querySelector('#total-payment').innerHTML = `Total payment: Ksh ${total_pay}`
@@ -173,6 +180,7 @@ function computeloan(){
     let payment = ((amount / months) + interest).toFixed(0);
     let total_pay = (payment * months ).toFixed(0);
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+    total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     document.querySelector('#entered-amount').innerHTML = `Amount Entered: Ksh ${amount}`
     document.querySelector('#payment').innerHTML = `Monthly payment: Ksh ${payment}`    
     document.querySelector('#total-payment').innerHTML = `Total payment: Ksh ${total_pay}`
