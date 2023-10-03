@@ -14,12 +14,38 @@
 <div class="menu">
     <span class="open-menu-icon" id="mobile-menu" onclick="openMenu()"> &#9776;</span>
 
+
+
 </div>
 
 
     <div class="bank_logo" >
         <a href="index.html" id="brand"><img src="fsa good logo.png" class="fsa_logo" alt="">
         <h3>KIKUMINI F.S.A</h3></a>
+    </div>
+    <div class="links-top-nav" id="links-top-nav">
+        <div class="links">
+            <a href="index.html" >HOME</a>
+        </div>
+        <div class="links">
+            <a href="save.html" >HOW TO SAVE</a>
+        </div>
+        <div class="links">
+            <a href="#" >OUR TARIFFS</a>
+        </div>
+        <div class="links">
+            <a href="#" onclick="openAd()" >PAYBILL AND PAYMENTS</a>
+        </div>
+        <div class="links">
+            <a href="#loancal" onclick="scroll()">LOAN CALCULATOR</a>
+        </div>
+        <div class="links">
+            <a href="#" >OUR TEAM</a>
+        </div>
+        <div class="links">
+            <a href="#" >CONTACT US</a>
+        </div>
+
     </div>
 </nav>
 <body>
@@ -35,7 +61,7 @@
     <div class="darshboard" id="sidebar">
         <div class="top-sidebar">
             <span class="close-menu-icon" id="close-menu-bar" onclick="closeMenu()">&times;</span>
-            <img src="fsa good logo.png" alt="">
+            <img src="fsa good logo.png" alt="" class="icon">
             <h2>KIKUMINI F.S.A</h2>
 
         </div>
@@ -502,6 +528,31 @@
 
 
 </div>
+
+<div id="loancal">
+
+    <div class="input" id="input">
+        <h1>Loan Calculator.</h1>
+        <p>enter amount of money you want between <strong>Kes 500 and Kes 500,000</strong> below to get started</p>
+       <hr> <p>I Want To Borrow: Kes</p><br>
+        <input id="amount" type="number" min="500" max="500000" step="1" value="1000" oninput="computeloan()"><br>
+        <h2 id="interest-rate"></h2><hr>
+        <p>Months to pay:</p><br>
+        <input id="months" type="number" min="1" max="36" value="1" step="1" oninput="computeloan()">
+
+    </div>
+    
+    <div class="numbers" id="numbers">
+        <h2 id="entered-amount"></h2>
+        <h2 id="payment"></h2><hr>
+        <h2 id="total-payment"></h2>
+    </div>
+
+
+
+</div>
+
+
 
 
 
