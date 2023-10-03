@@ -108,7 +108,7 @@ h3{
 
 .links a{
   text-decoration: none;
-  font: quicksand;
+  font-family: quicksand;
   font-weight: 600;
   color: rgb(255, 255, 255);
   font-size: 16px;
@@ -173,21 +173,21 @@ h3{
 
 #loancal p{
   text-transform: capitalize;
-  font: quicksand;
+  font-family: quicksand;
   font-weight: 600;
   color: #050c4b;
   font-size: 20px;
 
 }
 #loancal h1{
-  font-style: quicksand;
+  font-family: quicksand;
   color: rgb(247, 0, 0);
   font-weight: 700;
   text-align: center;
 }
 
 #loancal h2{
-  font: raleway;
+  font-family: quicksand;
   color: rgb(255, 0, 0);
   margin-left: 20px;
   margin-right: 10px;
@@ -206,7 +206,7 @@ h3{
 @media(min-width:385px) and (max-width:670px){
   #input{
     width: 97%;
-    font: raleway;
+    font-family: quicksand;
     border-radius: 0px;
     height: 500px;
     padding: 10px;
@@ -226,7 +226,7 @@ h3{
 }
 
 .input p{
-  font: quicksand;
+  font-family: quicksand;
   font-size: 22px;
   font-weight: 600;
   color: #073866;
@@ -242,7 +242,7 @@ input{
   border-radius: 5px;
   padding: 5px;
   font-size: 22px;
-  font: quicksand;
+  font-family: quicksand;
   font-weight: 700;
   color: #0b63b4;
 
@@ -320,7 +320,7 @@ input{
 }
 
 .top-sidebar h2 {
-  font: quicksand;
+  font-family: quicksand;
   font-weight: 600;
   margin-left: 140px;
   margin-top: -30px;
@@ -414,7 +414,7 @@ input{
 .fsa-home a{
   text-decoration: none;
   font-size: 1.3rem;
-  font: quicksand;
+  font-family: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   font-family: monospace;
@@ -448,7 +448,7 @@ input{
 .fsa-services a{
   text-decoration: none;
   font-size: 1.3rem;
-  font: quicksand;
+  font-family: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
@@ -482,7 +482,7 @@ input{
 .fsa-contacts a{
   text-decoration: none;
   font-size: 1.3rem;
-  font: quicksand;
+  font-family: quicksand;
   text-align: center;
   margin-left: 10px;
   font-weight: 400;
@@ -513,7 +513,7 @@ input{
 .fsa-payments a{
   text-decoration: none;
   font-size: 1.3rem;
-  font: quicksand;
+  font-family: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
@@ -542,7 +542,7 @@ input{
 .fsa-team a{
   text-decoration: none;
   font-size: 1.3rem;
-  font: quicksand;
+  font-family: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
@@ -572,7 +572,7 @@ input{
 .fsa-partners a{
   text-decoration: none;
   font-size: 1.3rem;
-  font: quicksand;
+  font-family: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
@@ -602,7 +602,7 @@ cursor: pointer;
 .fsa-events a{
   text-decoration: none;
   font-size: 1.3rem;
-  font: quicksand;
+  font-family: quicksand;
   color: rgb(4, 12, 61);
   text-align: center;
   margin-left: 10px;
@@ -613,7 +613,7 @@ cursor: pointer;
   bottom: 140px;
   position: fixed;
   width: 450px;
-  font: quicksand;
+  font-family: quicksand;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
@@ -632,6 +632,7 @@ cursor: pointer;
   scroll-behavior: smooth;
   font-size: 1.4rem;  
   font: bold;
+  font-family: ;
   font-weight: 700;
   align-items: center;
   justify-content: center;
@@ -642,10 +643,6 @@ cursor: pointer;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
   opacity:1 ;
-
-  
-
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -924,170 +921,6 @@ p{
 
 /*end of the quick links */
 
-.message-to-user{
-  height: 250px;
-  background-color: white;
-  margin: 0px;
-  display: flex;
-  margin-right: -10px;
-  margin-top: 40px;
-
-}
-
-@media(max-width: 384px){
-  #user{
-    width: 474px;
-    display: block;
-    height: auto;
-  }
-}
-
-@media(min-width: 670px){
-  #user{
-    width: 1580px;
-  }
-}
-@media(min-width:385px) and (max-width: 670px){
-  #user{
-    width: 680px;
-    display: block;
-    height: auto;
-    margin-bottom: 40px;
-  }
-}
-
-
-.going-digital-message{
-  background-color: transparent;
-  height: auto;
-  align-self: left;
-  margin-left: 0px;
-}
-
-.loan-application{
-  aspect-ratio: 3/2;
-  width: 50%;
-  object-fit: contain;
-  vertical-align:bottom;
-  margin-left: 10%;
-  z-index: 0;
-}
-
-.fsa-message{
-  background-color: transparent;
-  display: block;
-  margin-right: 10px;
-  text-align: left;
-  width: 730px;
-  padding: 10px;
-}
-
-@media(min-width:385px) and (max-width: 670px){
-  #fsa-message{
-    margin-left: 10px;
-    width: 650px;
-    margin-right: 10px;
-    font-size: 1rem;
-
-  }
-}
-
-@media(max-width:384px){
-  #fsa-message{
-    margin-left: 10px;
-    width: 400px;
-    margin-right: 10px;
-    font-size: 0.6rem;
-
-  }
-}
-
-
-
-
-
-.fsa-message h1{
-  font-family: monospace;
-  color:  rgb(24, 176, 237);
-  font-size: 1.5rem;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: bolder;
-  
-}
-
-
-
-.fsa-message p{
-  font-size: 1.4rem;
-  font-weight: 100;
-  color: rgb(3, 3, 40);
-  text-transform:initial;
-  margin-left: 40px;
-  margin-top: 8px;
-  z-index: 1;
-}
-
-.to-loans{
-  margin-top: 90px;
-  margin-left: 50px;
-  margin-bottom: 40px;
-  display: flex;
-  border: 0px;
-  background-color: rgb(1, 183, 255);
-  height: 55px;
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: -0px -1px 5px 1px rgba(8, 29, 39, 0.15);
-  cursor: pointer;
-
-}
-
-@media(max-width:384px){
-  #to-loans{
-    margin-left: 70px;
-  }
-}
-
-@media(min-width:385px) and (max-width: 670px){
-  #to-loans{
-    margin-left: 160px;
-  }
-}
-
-
-.to-loans:hover{
-  background-color: rgb(3, 3, 40);
-  width: 300px;
-  color: white;
-}
-
-.to-loans a{
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 17px;
-  margin-left: 15px;
-  color: whitesmoke;
-
-}
-
-.to-loans a:hover{
-  color: white;
-  font-size: 1.3rem;
-}
-
-.to-loans img{
-  aspect-ratio: 3/2;
-  width: 35%;
-  object-fit: contain;
-  vertical-align: middle;
-  margin-top: -6px;
-}
 
 /* our numbers don't lie */
 
@@ -2526,38 +2359,61 @@ p{
 /* HOW TO SAVE PAGE*/
 
 .savings-accounts{
-  height: auto;
+  height: 440px;
   background-color: rgb(243, 234, 234);
   width: 100%;
   text-align: left;
   padding-top: 50px;
   padding-bottom: 50px;
+  background-image: url(young-afro-girl-wearing-glasses-looking-happy-texting-with-frien.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
+@media(min-width:385px) and (max-width:670px){
+  #savings {
+    left: 0;
+    text-align: left;
+    font-size: 18px;
+    font-family: quicksand;
+    margin-bottom: 245px;
 
+  }
+
+} 
 
 .savings-accounts h2{
   font-size: 42px;
   font: quicksand;
-  margin-left:150px;
-  color: rgb(6, 44, 59);
+  margin-left:50px;
+  color: rgb(0, 0, 0);
   padding-bottom: 0px;
   margin-bottom: 10px;
 }
 
 .about-savings-account{
-  border-top: 1px solid rgba(9, 7, 77, 0.173);
-  margin-left: 0px;
-  padding-right: 50px;
+  border-top: 10px solid rgb(0, 174, 255);
+  padding-right: 20px;
+  background-color:rgba(245, 245, 245, 0.718);
+  width: 650px;
+  height: 400px;
+  margin-left: 800px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  
+  
 } 
 
 @media(max-width:384px){
-  #savings-accounts p{
+  #savings-accounts{
     left: 0;
     text-align: left;
-    margin-left: 30px;
+    margin-left: 0px;
     font-size: 18px;
-    font: quicksand;
+    width: 96%;
+    height: 500px;
+    font-family: quicksand;
   }
 
 } 
@@ -2573,12 +2429,17 @@ p{
 
 } 
 @media(min-width:385px) and (max-width:670px){
-  #savings-accounts p{
+  #savings-accounts {
     left: 0;
     text-align: left;
-    margin-left: 30px;
+    margin-left: 0px;
     font-size: 18px;
-    font: quicksand;
+    width: 660px;
+    font-family: quicksand;
+    margin-top: 320px;
+    background-color:rgba(245, 245, 245, 0.84);
+    border-radius: 0px;
+
   }
 
 } 
@@ -2588,30 +2449,29 @@ p{
     text-align: left;
     margin-left: 30px;
     font-size: 32px;
-    font: quicksand;
+    font-family: quicksand;
   }
 
 } 
 
 
 .about-savings-account p{
-  font-size: 20px;
-  font: quicksand;
-  color: #020e19;
-  margin-left: 150px;
+  font-size: 25px;
+  font-family: Quicksand;
+  color: #000000;
+  margin-left: 50px;
   font-weight: 400;
 }
 
 .benefits{
   display: block;
   background-color: white;
-  height: 400px;
+  height: auto;
   padding: 20px;
-  overflow: scroll;
 }
  .benefits h2{
-  font-size: 42px;
-  font: quicksand;
+  font-size: 32px;
+  font-family: quicksand;
   margin-left:130px;
   color: rgb(6, 44, 59);
   padding-bottom: 0px;
@@ -2624,7 +2484,7 @@ p{
   #benefits h2 {
     font-size: 25px;
     font-weight: 700;
-    font: quicksand;
+    font-family: quicksand;
     margin-left: 20px;
   }
  }
@@ -2643,31 +2503,30 @@ p{
   display: flex;
   margin-bottom: 10px;
   margin-top: 40px;
+  
 
  }
 
  @media(max-width:384px){
   #lists{
-    overflow:scroll;
     display: block;
   }
  }
 
  @media(min-width:385px) and (max-width:670px){
   #lists{
-    overflow:scroll;
     display: block;
   }
  }
 
 .benefit{
   height: 200px;
-  width: 250px;
+  width: 550px;
   border: 1px solid rgba(255, 255, 255, 0.319);
-  border-radius: 20px;
-  background-color: whitesmoke;
+  border-radius: 0px;
+  background-color:rgb(245, 243, 243);
   cursor: pointer;
-  margin-left: 50px;
+  margin-left: 0px;
   box-shadow: 0px 10px 20px 0 rgba(0, 1, 0, 0.25);
 }
 
@@ -2685,32 +2544,31 @@ p{
 
 @media(min-width:385px) and (max-width:670px){
   #benefit{
-    width: 600px;
+    width: 640px;
     position: relative;
-    height: 190px;
-    margin-left: 10px;
-    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-bottom: 2px;
+    text-align: center;
   }
 
 }
 
-.list h3{
-  text-decoration: underline;
-  font-size: 18px;
+.list h1{
+  font-size: 22px;
   margin-top: 10px;
   margin-left: 30px;
-  text-align:left;
+  text-align:center;
   text-transform: capitalize;
-  font: quicksand;
+  font-family: quicksand;
   color: rgb(4, 6, 126);
 
 }
 
 .text{
   padding: 3px;
-  font: quicksand;
+  font-family: quicksand;
   text-decoration: none;
-  text-align: left;
+  text-align: center;
   font-size: 18px;
   color: rgb(17, 8, 90);
   margin-right: 10px;
@@ -2724,12 +2582,12 @@ p{
   text-decoration: none;
   color: rgb(31, 8, 116);
   text-transform: uppercase;
-  font: quicksand;
-  font-weight: 900;
-  margin-left: 45px;
+  font-family: quicksand;
+  font-weight: 400;
+  margin-left: 115px;
   margin-top: 1px;
   background-color: wheat;
-  border-radius: 10px;
+  border-radius: 2px;
   padding:10px ;
   padding-left: 10px;
   padding-right: 10px;
@@ -2772,7 +2630,7 @@ p{
 
 
 .what-we-need-from-you{
-  font: quicksand;
+  font-family: quicksand;
   text-align: left;
   border-bottom: 2px solid rgba(7, 83, 155, 0.185);
   margin-bottom: 10px;
@@ -2784,14 +2642,14 @@ p{
   text-transform: capitalize;
 }
 .what-we-need-from-you ul{
-  font: quicksand;
+  font-family: quicksand;
   font-size: 23px;
   font-weight: 600;
   color: rgb(4, 104, 143);
 }
 .what-we-need-from-you p{
   text-transform: capitalize;
-  font: quicksand;
+  font-family: quicksand;
   font-size: 18px;
   margin-left: 150px;
   font-weight: 300;
@@ -2821,7 +2679,7 @@ p{
   text-transform: capitalize;
 }
 .account-rates ul{
-  font: quicksand;
+  font-family: quicksand;
   font-size: 23px;
   font-weight: 600;
   color: rgb(6, 64, 87);
@@ -2893,7 +2751,7 @@ p{
 }
 
 .others-liked h1{
-  font: quicksand;
+  font-family: quicksand;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -2951,7 +2809,7 @@ p{
 .shares h1{
   margin-top: 10px;
   margin-left: 80px;
-  font: quicksand;
+  font-family: quicksand;
   font-size: 32px;
 
 }
