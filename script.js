@@ -1,6 +1,6 @@
 function openMenu() {
-  document.getElementById("sidebar").style.marginLeft = "0%";
   document.getElementById("sidebar").style.display = "block";
+  document.getElementById("sidebar").style.marginLeft = "0%";
   document.getElementById("overlay-sidebar").style.display = "block";
 
 }
@@ -71,7 +71,7 @@ function computeloan(){
 
 
   if(amount <= 5000 && amount >= 500){
-    document.querySelector('#interest-rate').innerHTML = `Our monthly interest rate for Ksh ${amount} = 0.33%`;
+    document.querySelector('#interest-rate').innerHTML = `Our monthly interest rate for Ksh ${amount} = 4%`;
   }
   else if(amount > 5000 && amount <= 500000){
     document.querySelector('#interest-rate').innerHTML = `Our monthly interest rate for Ksh ${amount} = 1.5%`
@@ -85,9 +85,9 @@ function computeloan(){
 
 
   if(months <= 3 && amount >= 500 && amount <= 5000){
-    const interest = (0.33 * amount)/ 100;
-    let payment = ((amount / months) + interest).toFixed(0);
-    let total_pay = (payment * months ).toFixed(0);
+    const interest = (4 * amount) / 100;
+    let payment = ((amount / months) + interest).toFixed(2);
+    let total_pay = (payment * months ).toFixed(2);
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
 
@@ -104,7 +104,7 @@ function computeloan(){
   }
 
 
-   if (months <= 6 && amount >= 5000 && amount <= 10000){
+   if (months <= 6 && amount >= 5001 && amount <= 10000){
     const interest = (1.5 * amount)/ 100;
     let payment = ((amount / months) + interest).toFixed(0);
     let total_pay = (payment * months ).toFixed(0);
