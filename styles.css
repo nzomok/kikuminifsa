@@ -210,6 +210,8 @@ h3{
     border-radius: 0px;
     height: 500px;
     padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -261,9 +263,10 @@ input{
 @media(min-width:385px) and (max-width:670px){
   #numbers{
     width: 94%;
-    margin-top: -20px;
+    margin-top: 0px;
     padding: 20px;
     box-shadow: none;
+    border-top: 2px solid #050c4b;
   }
 }
 
@@ -2517,7 +2520,7 @@ p{
   position: absolute;
   /* Rotate 
   transform: rotate(-30deg);
-} */
+} 
 
 
 /* HOW TO SAVE PAGE*/
