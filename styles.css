@@ -2360,7 +2360,7 @@ p{
 
 .savings-accounts{
   height: 440px;
-  background-color: rgb(243, 234, 234);
+  background-color: rgb(253, 249, 249);
   width: 100%;
   text-align: left;
   padding-top: 50px;
@@ -2368,14 +2368,15 @@ p{
   background-image: url(young-afro-girl-wearing-glasses-looking-happy-texting-with-frien.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
+  background-attachment:local;
 }
 
 @media(min-width:385px) and (max-width:670px){
   #savings {
     left: 0;
     text-align: left;
-    font-size: 18px;
+    font-size: 23px;
     font-family: quicksand;
     margin-bottom: 245px;
 
@@ -2395,7 +2396,7 @@ p{
 .about-savings-account{
   border-top: 10px solid rgb(0, 174, 255);
   padding-right: 20px;
-  background-color:rgba(245, 245, 245, 0.718);
+  background-color:rgba(255, 255, 255, 0.815);
   width: 650px;
   height: 400px;
   margin-left: 800px;
@@ -2414,17 +2415,20 @@ p{
     width: 96%;
     height: 500px;
     font-family: quicksand;
+    background-color: rgba(234, 241, 247, 0.74);
+    margin-bottom: 10px;
   }
 
 } 
 
 @media(max-width:384px){
-  #savings-accounts h2{
+  #savings-accounts h2, #savings-accounts p{
     left: 0;
     text-align: left;
     margin-left: 30px;
     font: quicksand;
-    font-size: 25px;
+    font-size: 28px;
+    color: rgb(1, 16, 22);
   }
 
 } 
@@ -2433,7 +2437,7 @@ p{
     left: 0;
     text-align: left;
     margin-left: 0px;
-    font-size: 18px;
+    font-size: 22px;
     width: 660px;
     font-family: quicksand;
     margin-top: 320px;
@@ -2544,9 +2548,9 @@ p{
 
 @media(min-width:385px) and (max-width:670px){
   #benefit{
-    width: 640px;
+    width: 440px;
     position: relative;
-    margin-left: 0px;
+    margin-left: 100px;
     margin-bottom: 2px;
     text-align: center;
   }
@@ -2554,7 +2558,7 @@ p{
 }
 
 .list h1{
-  font-size: 22px;
+  font-size: 26px;
   margin-top: 10px;
   margin-left: 30px;
   text-align:center;
@@ -2569,7 +2573,7 @@ p{
   font-family: quicksand;
   text-decoration: none;
   text-align: center;
-  font-size: 18px;
+  font-size: 25px;
   color: rgb(17, 8, 90);
   margin-right: 10px;
 
@@ -2583,8 +2587,8 @@ p{
   color: rgb(31, 8, 116);
   text-transform: uppercase;
   font-family: quicksand;
-  font-weight: 400;
-  margin-left: 115px;
+  font-weight: 600;
+  margin-left: 25px;
   margin-top: 1px;
   background-color: wheat;
   border-radius: 2px;
@@ -2601,12 +2605,13 @@ p{
 }
 
 .what-we-need{
-  display: flex;
-  background-color: rgb(238, 238, 238);
-  border: 1px solid rgba(0, 0, 0, 0.329);
+  background-color: whitesmoke;
+  height: 650px;
+  border: 20px solid rgb(0, 183, 255);
   border-left: 0px;
   border-right: 0px;
-  height: auto;
+  border-radius: 0px;
+  margin-bottom: 0px;
 }
 
 @media(max-width:384px){
@@ -2623,18 +2628,30 @@ p{
 
 .requirements{
   display: block;
-  margin-left: 10px;
-
+  margin-left: 0px;
 }
+
+@media(max-width:384px){
+  #requirements{
+    display: block;
+  }
+}
+
+@media(min-width:385px) and (max-width:670px){
+  #requirements{
+    display: block;
+  }
+}
+
 
 
 
 .what-we-need-from-you{
   font-family: quicksand;
   text-align: left;
-  border-bottom: 2px solid rgba(7, 83, 155, 0.185);
   margin-bottom: 10px;
   padding-bottom: 20px;
+  padding-right: 0px;
 }
 
 .what-we-need-from-you h1, ul{
@@ -2650,7 +2667,7 @@ p{
 .what-we-need-from-you p{
   text-transform: capitalize;
   font-family: quicksand;
-  font-size: 18px;
+  font-size: 23px;
   margin-left: 150px;
   font-weight: 300;
 }
@@ -2658,8 +2675,8 @@ p{
 @media(max-width:384px){
   #what-we-need-from-you ul,#what-we-need-from-you h1,#what-we-need-from-you p{
     display: block;
-    margin-left: 10px;
-    font-size: 18px;
+    margin-left: 20px;
+    font-size: 23px;
 
   }
 }
@@ -2667,7 +2684,7 @@ p{
   #what-we-need-from-you ul,#what-we-need-from-you h1,#what-we-need-from-you p{
     display: block;
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 23px;
 
   }
 }
@@ -2677,6 +2694,8 @@ p{
 .account-rates h1, ul{
   margin-left: 150px;
   text-transform: capitalize;
+  font-family: quicksand;
+  font-size: 23px;
 }
 .account-rates ul{
   font-family: quicksand;
@@ -2688,9 +2707,9 @@ p{
 @media(max-width:384px){
   #account-rates ul,#account-rates h1{
     display: block;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 23px;
   }
 }
 @media(min-width:385px) and (max-width:670px){
@@ -2698,126 +2717,156 @@ p{
     display: block;
     margin-left: 20px;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 23px;
 
   }
 }
-
-
 
 .more-accounts{
-  background-color: #f1f8ff;
-  height: auto;
-  width: 600px;
-  margin: 20px;
-  border-radius: 10px;
-  margin-top: 40px;
-  display: block;
-  z-index: 0;
-  padding-bottom: 20px;
-  position: relative;
-  box-shadow: 0px 10px 20px 0 rgba(0, 1, 0, 0.25);
-}
-
-
-@media(min-width:385px) and (max-width:670px){
-  #more-accounts{
-    display: block;
-    margin-left: 15px;
-    margin-bottom: 20px;
-    width: 650px;
-    margin-top: 40px;
-
-  }
-}
-
-@media(max-width:384px){
-  #more-accounts{
-    display: block;
-    margin-left: 0px;
-    margin-bottom: 20px;
-    width: 474px;
-    margin-top: 40px;
-
-  }
-}
-
-
-.others-liked{
-  text-align: center;
-  background-color: rgb(215, 213, 226);
-  border-top-right-radius: 00px;
-
-}
-
-.others-liked h1{
-  font-family: quicksand;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 24px;
-}
-
-.shares{
-  height: 150px;
-  background-color: rgba(236, 224, 210, 0.699);
-  border-radius: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 40px;
-  width: 500px;
-  position: relative;
+  width: 100%;
+  height: 700px;
+  background-color: rgb(255, 255, 255);
   display: flex;
+  margin: 0px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  margin-bottom: -20px;
+}
+
+@media(min-width:385px) and (max-width:670px){
+  #more-accounts{
+    display: block;
+    height: max-content;
+  }
+}
+@media(max-width:384px){
+  #more-accounts{
+    display: block;
+    height: max-content;
+  }
+}
+
+
+.account{
+  background-color: transparent;
+  height: 560px;
+  width: 500px;
+  margin: 40px;
+}
+
+@media(min-width:385px) and (max-width:670px){
+  #account{
+    margin-left: 80px;
+    margin-top: -40px;
+    width: 80%;
+    height: auto;
+  }
+}
+@media(max-width:384px){
+  #account{
+    margin-left: 40px;
+    margin-top: -40px;
+    width: 80%;
+    height: auto;
+  }
+}
+
+
+.account img{
+  width: 80%;
+  border-radius: 20px;
+  align-self: center;
+  margin: 50px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 30px 0px rgb(8, 89, 155);
+
+}
+.details{
+  margin-top: -40px;
+  background-color: transparent;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+}
+
+
+@media(min-width:385px) and (max-width:670px){
+  #details{
+    margin: 0px;
+    text-align: center ;
+    padding-left: 40px;
+    padding-right: 50px;
+
+  }
+}
+
+@media(max-width:384px){
+  #details{
+    margin: 0px;
+    text-align: center ;
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+}
+
+.details h1{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 183, 255);
   font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0px 10px 20px 0 rgba(0, 1, 0, 0.25);
-}
-
-@media(max-width:384px){
-  #shares {
-    font-size: 28px;
-    font-weight: 200;
-    width: 400px;
-    height: fit-content;
-  }
-}
-
-@media(min-width:385px) and (max-width:670px){
-  #shares {
-    font-size: 22px;
-    font-weight: 200;
-    width: 600px;
-    height: fit-content;
-  }
-}
-
-
-@media(max-width:384px){
-  #shares h1, #shares h2{
-    font-size: 28px;
-    font-weight: 200;
-  }
-}
-
-@media(min-width:385px) and (max-width:670px){
-  #shares h1, #shares h2{
-    font-size: 28px;
-    font-weight: 200;
-  }
-}
-
-.shares h1{
-  margin-top: 10px;
-  margin-left: 80px;
-  font-family: quicksand;
-  font-size: 32px;
-
-}
-
-.shares h2{
-  margin-left: 10px;
-  font-size: 22px;
-  font: quicksand;
+  text-decoration: none;
   text-transform: capitalize;
-  margin-top: 20px;
+}
+
+.details p{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  margin-right: 0px;
+}
+
+.details a{
+  text-decoration:  none;
+  font-size: 22px;
+  font-weight: 900;
+  background-color: rgb(0, 183, 255);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 0px rgb(255, 0, 0);
+  margin-top: 500px;
+  margin-left: 110px;
+  text-transform: uppercase;
+
+}
+@media(min-width:385px) and (max-width:670px){
+  #details-a{
+    margin-left: 20px;
+    margin-top: 80px;
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media(max-width:384px){
+  #details-a{
+    margin-left: 20px;
+    margin-top: 80px;
+    width: 80%;
+    height: auto;
+  }
+}
+
+
+.details a:hover{
+  box-shadow: 0px 0px 10px 0px rgb(7, 234, 49);
+  font-size: 21px;
+  transition: 0.2s ease-in;
+  -webkit-transform-origin-z: center;
+  background-color: rgb(3, 21, 48);
+  color: white;
+
+
+
 }
