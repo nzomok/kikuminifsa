@@ -1,7 +1,5 @@
 :root {
-    --font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family: Quicksand;
 }
 
 html {
@@ -124,7 +122,7 @@ h3{
 #loancal{
   width: 70%;
   height: 550px;
-  background-color: rgb(4, 29, 44);
+  background-color: rgb(3, 3, 40);
   margin-left: 260px;
   margin-top: 40px;
   border-radius: 10px;
@@ -140,7 +138,7 @@ h3{
     height: max-content;
     width: 640px;
     margin-left: 10px;
-    background-color: rgba(6, 6, 70, 0.863);
+    background-color: rgb(3, 3, 40);
     padding-right: 10px;
 
   }
@@ -175,24 +173,22 @@ h3{
   text-transform: capitalize;
   font-family: quicksand;
   font-weight: 600;
-  color: #050c4b;
+  color: #0091ff;
   font-size: 20px;
 
 }
 #loancal h1{
-  font-family: quicksand;
-  color: rgb(247, 0, 0);
+  color: rgb(247, 16, 0);
   font-weight: 700;
   text-align: center;
 }
 
 #loancal h2{
-  font-family: quicksand;
   color: rgb(255, 0, 0);
-  margin-left: 20px;
+  text-align: center;
   margin-right: 10px;
-  font-size:25px;
-  font-weight: 600;
+  font-size:28px;
+  font-weight: 800;
 }
 
 .input{
@@ -200,7 +196,10 @@ h3{
   margin-right: 0px;
   border-top-right-radius: 5px;
   width: 60%;
-  background-color: rgb(0, 183, 255);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 40px 0pxrgb(255, 255, 255);
+  border-radius: 10px;
+
 }
 
 @media(min-width:385px) and (max-width:670px){
@@ -218,52 +217,52 @@ h3{
 @media(max-width:384px){
   #input{
     width: 96%;
-    font: raleway;
     border-radius: 0px;
-    height: 550px;
+    font-family: quicksand;
+    height: 580px;
     padding: 10px;
   }
 }
 
 .input p{
   font-family: quicksand;
-  font-size: 22px;
-  font-weight: 600;
-  color: #073866;
+  font-size: 25px;
+  font-weight: 900;
+  color: #e1100c;
   text-align: center;
 
 }
 input{
   width: 90%;
   margin-left: 20px;
-  height: 60px;
-  box-shadow: -1px -1px 10px 1px black;
+  height: 70px;
+  box-shadow: 0px 0px 6px 0px rgb(0, 140, 255);
   border: 0px;
-  border-radius: 5px;
+  border-radius: 1px;
   padding: 5px;
-  font-size: 22px;
+  font-size: 28px;
   font-family: quicksand;
-  font-weight: 700;
+  font-weight: 900;
   color: #0b63b4;
 
 }
 .numbers{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(9, 161, 255);
   width: 500px;
   margin-left: 0px;
-  margin-top: 5px;
-  height: 250px;
-  box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
+  margin-top: 100px;
+  height: 300px;
   flex-wrap: wrap;
   position: relative;
   z-index: 0;
   text-align: left;
+  border-radius: 0px;
 }
 
 @media(min-width:385px) and (max-width:670px){
   #numbers{
     width: 94%;
-    margin-top: 0px;
+    margin-top: 20px;
     padding: 20px;
     box-shadow: none;
     border-top: 2px solid #050c4b;
@@ -273,7 +272,7 @@ input{
 @media(max-width:384px){
   #numbers{
     width: 91%;
-    margin-top: -10px;
+    margin-top: 20px;
     padding: 20px;
     box-shadow: none;
   }
@@ -964,7 +963,7 @@ p{
 .fsa-numbers{
   vertical-align: top;
   text-align: center;
-  background-color: rgb(3, 3, 40);
+  background-color: rgb(255, 255, 255);
   margin-right: -10px;
   margin-bottom: 40px;
 }
@@ -991,15 +990,17 @@ p{
 
 .fsa-numbers h1{
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   padding: 10px;
-  color: rgba(167, 226, 253, 0.863);
+  color: rgba(0, 0, 0, 0.863);
+  font-weight: 700;
 }
 
 .fsa-numbers p{
   text-transform: uppercase;
-  color: rgba(146, 217, 248, 0.863);
-  padding: 5px;
+  color: rgba(0, 0, 0, 0.863);
+  padding: 10px;
+  font-weight: 700;
 }
 
 .real-numbers{
@@ -1050,9 +1051,9 @@ p{
     width: 400px;
     height: 250px;
     margin-left: 10px;
-    border-radius: 0px;
+    border-radius: 20px;
     margin-top: -10px;
-    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 0px rgb(8, 89, 155);
 
   }
 }
@@ -1096,15 +1097,17 @@ p{
   height: 190px;
   width:350px;
   margin: 10px;
-  background-color: rgb(3, 3, 40);
+  background-color: whitesmoke;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
+  box-shadow: 0px 0px 100px 0px rgba(8, 89, 155, 0.666);
+
 }
 
 .customers:hover{
   transition: 0.5s;
-  box-shadow: 0px 0px 5px 0px black;
+  box-shadow: 0px 0px 10px 0px rgb(8, 89, 155);
 
 
 }
@@ -1119,23 +1122,24 @@ p{
   text-transform: uppercase;
   font-size: bold;
   font-family: monospace;
-  font-size: 1.5rem;
-  color:rgb(255, 255, 255);
+  font-size: 1.9rem;
+  color:rgb(13, 13, 112);
+  text-align: center;
   font-weight: 900;
 }
 
 .customers h1{
-  color: rgba(255, 255, 255, 0.836);
+  color:rgb(13, 13, 112);
 }
 
 .branches{
   height: 190px;
   width:350px;
   margin: 10px;
-  box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
+  box-shadow: 0px 0px 90px 0px rgba(8, 89, 155, 0.651);
   background-color: rgb(255, 255, 255);
   text-align: center;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -1149,7 +1153,7 @@ p{
   text-transform: uppercase;
   font-size: bold;
   font-family: monospace;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   color:rgb(13, 13, 112);
   font-weight: 900;
 }
@@ -1162,8 +1166,8 @@ p{
   height: 190px;
   width:350px;
   margin: 10px;
-  box-shadow: 0px 0px 15px 0px rgb(13, 63, 139);
-  background-color: rgb(12, 178, 243);
+  box-shadow: 0px 0px 90px 0px rgba(8, 89, 155, 0.684);
+  background-color: rgb(255, 255, 255);
   text-align: center;
   border-radius: 10px;
   cursor: pointer;
@@ -1179,13 +1183,13 @@ p{
   text-transform: uppercase;
   font-size: bold;
   font-family: monospace;
-  font-size: 1.5rem;
-  color:rgb(4, 37, 65);
+  font-size: 1.7rem;
+  color:rgb(13, 13, 112);
   font-weight: 900;
 }
 
 .years h1{
-  color: rgba(5, 52, 90, 0.836);
+  color:rgb(13, 13, 112);
 }
 
 
@@ -1972,125 +1976,6 @@ p{
   text-align: center;
 }
 
-.circle{
-  border: 5px solid green;
-  background-color: green;
-  border-radius: 100px;
-  height: 100px;
-  width: 100px;
-  margin-left: 35%;
-  margin-top: 10%;
-  justify-content: center;
-}
-
-@media(min-width:385px) and (max-width:670px){
-  #circle{
-    height: 100px;
-    width: 100px;
-    margin-left: 25%;
-    margin-top: -170%;
-  }
-}
-@media(min-width: 670px){
-  #circle{
-    height: 100px;
-    width: 100px;
-    margin-left: 25%;
-    margin-top: -170%;
-  }
-}
-
-@media(max-width:384px){
-  #circle{
-    height: 90px;
-    width: 90px;
-    margin-left: 25%;
-    margin-top: -40%;
-  }
-}
-
-
-
-
-.tick{
-  height: 50px;
-  width: 10px;
-  border: 10px solid rgb(255, 255, 255);
-  margin-left: 70px;
-  margin-top: 30px;
-  transform: rotate(45deg);
-  border-top: 0px;
-  border-left: 0px;
-  border-bottom-right-radius: 5px;
-}
-
-.success-message{
-  font-size:1rem;
-  text-align: center;
-  justify-content: space-between;
-}
-
-@media(max-width:384px){
-  #success-msg{
-    font-size:1rem;
-    text-align: center;
-    justify-content: space-between;
-    margin-top: 400px;
-
-  }
-}
-
-.success-message h2{
-  margin-bottom: 200px;
-  color: green;
-}
-
-@media(min-width:385px) and (max-width:670px){
-  #tick{
-    border-top: 0px;
-    border-left: 0px;
-    height: 50px;
-    width: 15px;
-    margin-left: 40px;
-    margin-top: 15px;
-    border-radius: 1px;
-    border-bottom-right-radius: 5px;
-
-  }
-}
-@media(min-width:670px){
-  #tick{
-    border-top: 0px;
-    border-left: 0px;
-    height: 50px;
-    width: 15px;
-    margin-left: 40px;
-    margin-top: 15px;
-    border-radius: 1px;
-    border-bottom-right-radius: 5px;
-
-  }
-}
-
-@media(max-width:384px){
-  #tick{
-    border-top: 0px;
-    border-left: 0px;
-    height: 50px;
-    width: 15px;
-    margin-left: 40px;
-    margin-top: 15px;
-    border-radius: 1px;
-    border-bottom-right-radius: 5px;
-
-  }
-}
-
-
-
-
-
-
 .arrow {
   width: 10px;
   height: 10px;
@@ -2172,7 +2057,7 @@ p{
     height: 100%;
     margin-left: 1%;
     margin-right: -3%;
-    margin-top: -0%;
+    margin-top: -100%;
     position: -webkit-sticky;    z-index: 1;
 
   }
@@ -2184,7 +2069,7 @@ p{
     background-color: rgb(3, 3, 40);
     margin-left: 1%;
     margin-right: -1%;
-    margin-top: 0%;
+    margin-top: -60%;
     margin-bottom: 400px;
     border-radius: 10px;
     position: -webkit-sticky;    z-index: 1;
@@ -2197,7 +2082,7 @@ p{
     width: 560px;
     height: 100%;
     position: -webkit-sticky; z-index: 1;
-    margin-top: -23.5%;
+    margin-top: -30%;
     z-index: 3;
 
 
