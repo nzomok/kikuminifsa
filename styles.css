@@ -106,9 +106,8 @@ h3{
 
 .links a{
   text-decoration: none;
-  font-family: quicksand;
   font-weight: 600;
-  color: rgb(255, 255, 255);
+  color: rgb(2, 23, 34);
   font-size: 16px;
   scroll-behavior: smooth;
 }
@@ -122,7 +121,7 @@ h3{
 #loancal{
   width: 70%;
   height: 550px;
-  background-color: rgb(3, 3, 40);
+  background-color: transparent;
   margin-left: 260px;
   margin-top: 40px;
   border-radius: 10px;
@@ -138,8 +137,9 @@ h3{
     height: max-content;
     width: 640px;
     margin-left: 10px;
-    background-color: rgb(3, 3, 40);
-    padding-right: 10px;
+    background-color: transparent;
+    border-radius: 0px;
+    margin-right: 20px;
 
   }
 }
@@ -150,7 +150,7 @@ h3{
     height: 550px;
     width: 1170px;
     margin-left: 200px;
-    background-color: rgba(6, 6, 70, 0.863);
+    background-color: transparent;
     padding-right: 10px;
 
   }
@@ -162,7 +162,7 @@ h3{
     height: max-content;
     width: 445px;
     margin-left: 5px;
-    background-color: rgba(6, 6, 70, 0.863);
+    background-color: transparent;
     padding-right: 10px;
 
   }
@@ -187,7 +187,7 @@ h3{
   color: rgb(255, 0, 0);
   text-align: center;
   margin-right: 10px;
-  font-size:28px;
+  font-size:18px;
   font-weight: 800;
 }
 
@@ -197,7 +197,7 @@ h3{
   border-top-right-radius: 5px;
   width: 60%;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 0px 40px 0pxrgb(255, 255, 255);
+  box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);
   border-radius: 10px;
 
 }
@@ -211,6 +211,10 @@ h3{
     padding: 10px;
     padding-bottom: 20px;
     margin-bottom: 10px;
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.622);
+
   }
 }
 
@@ -221,12 +225,14 @@ h3{
     font-family: quicksand;
     height: 580px;
     padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.438);
+
   }
 }
 
 .input p{
   font-family: quicksand;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 900;
   color: #e1100c;
   text-align: center;
@@ -262,19 +268,28 @@ input{
 @media(min-width:385px) and (max-width:670px){
   #numbers{
     width: 94%;
-    margin-top: 20px;
+    margin-top: -15px;
     padding: 20px;
     box-shadow: none;
     border-top: 2px solid #050c4b;
+    border-bottom-right-radius: 1px ;
+    border-bottom-left-radius: 1px ;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.622);
+
+
   }
 }
 
 @media(max-width:384px){
   #numbers{
-    width: 91%;
-    margin-top: 20px;
+    width: 91.5%;
+    margin-top: 0px;
     padding: 20px;
     box-shadow: none;
+    border-bottom-right-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.622);
+
   }
 }
 
@@ -621,7 +636,7 @@ cursor: pointer;
 
 /* start on the home main page */
 .container{
-  height: 300px;
+  height: 600px;
   display: block;
   padding-top: 100px;
   margin-left: 0px;
@@ -631,34 +646,51 @@ cursor: pointer;
   scroll-behavior: smooth;
   font-size: 1.4rem;  
   font: bold;
-  font-family: ;
   font-weight: 700;
   align-items: center;
-  justify-content: center;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  background-image: url(businesswoman.png);
-  background-repeat: no-repeat;
-  background-blend-mode: overlay;
-  opacity:1 ;
+  background-image: url(20346.jpg);
 }
 
 
 .container h1{
-  color:rgb(241, 216, 182);
+  color:rgb(0, 166, 255);
   text-align: center;
   font: bold;
-  font-family: monospace;
-  margin-top: 30px;
-  font-size: 1.9rem;}
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 200px;
+  font-size: 3.9rem;
+  font-weight: 900;
+}
 
 @media (max-width:384px){
   #main-container{
     width: 474px;
-    color:rgb(241, 216, 182);
+    color:rgb(255, 255, 255);
     background-position: center;
     background-size:inherit;
+
+  }
+}
+
+@media (max-width:384px){
+  #bank-slogan{
+    color:rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-top: 270px;
+    text-transform: lowercase;
+
+  }
+}
+
+@media (min-width: 385px) and (max-width: 670px){
+  #bank-slogan{
+    color:rgb(255, 255, 255);
+    font-size: 2.2rem;
+    text-transform: lowercase;
+    margin-top: 100px;
 
   }
 }
@@ -666,9 +698,11 @@ cursor: pointer;
 @media (min-width: 385px) and (max-width: 670px){
   #main-container{
     width: 680px;
-    color:rgb(241, 216, 182);
+    color:rgb(0, 128, 255);
     background-position: center;
     background-size:inherit;
+    height: 450px;
+    font-weight: 900;
 
   }
 }
@@ -676,7 +710,7 @@ cursor: pointer;
 @media (min-width:670px){
   #main-container{
     width: 1580px;
-    color:rgb(241, 216, 182);
+    color:rgb(255, 255, 255);
     background-position: center;
     background-size:cover;
   }
@@ -700,7 +734,7 @@ p{
 
 @media(max-width: 384px){
   #top-animation{
-    font-size: 1rem;
+    font-size: 1.7rem;
 
   }
 }
@@ -714,7 +748,7 @@ p{
 
 @media(min-width:385px) and (max-width: 670px){
   #top-animation{
-    font-size: 1.2rem;
+    font-size: 1.9rem;
 
   }
 }
@@ -754,7 +788,7 @@ p{
   margin-top: -60px;
   z-index: 1;
   display: flex;
-  border-radius: 5px;
+  border-radius: 0px;
   box-shadow: 0px 0px 70px 0 rgba(0, 1, 0, 0.15);
 
 
@@ -769,7 +803,7 @@ p{
     flex-grow: 1;
     display: flex;
     padding-top: -5px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0px 0px 10px 9px rgba(0, 1, 0, 0.15);
 
     
@@ -794,8 +828,8 @@ p{
 
 @media(min-width:385px) and (max-width: 670px){
   #links{
-    margin-left: 77px;
-    width: 543px;
+    margin-left: 15px;
+    width: 650px;
     margin-top: 20px;
     height: auto;
     flex-grow: 1;
@@ -830,7 +864,7 @@ p{
     width: 180px;
     margin-right: 1px;
     display: inline-block;
-    border-radius: 2px;
+    border-radius: 5px;
   }
 }
 
@@ -841,17 +875,17 @@ p{
     margin: -1px;
     margin-bottom: 2.5px;
     display: inline-block;
-    border-radius: 2px;
+    border-radius: 5px;
   }
 }
 
 @media(min-width:385px) and (max-width: 670px){
   #more-link{
-    height: 100px;
-    width: 180px;
+    height: 140px;
+    width: 215px;
     margin: -1px;
     margin-bottom: 2.5px;
-    border-radius: 2px;
+    border-radius: 5px;
     display: inline-block;
 
   }
@@ -1075,7 +1109,7 @@ p{
     height: 200px;
     margin-left: 20px;
     border-radius: 0px;
-    margin-top: 30px;
+    margin-top: 10px;
     border-radius: 10px;
     display: inline-block;
   }
@@ -1120,9 +1154,8 @@ p{
 
 .customers p{
   text-transform: uppercase;
-  font-size: bold;
   font-family: monospace;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   color:rgb(13, 13, 112);
   text-align: center;
   font-weight: 900;
@@ -1151,9 +1184,8 @@ p{
 
 .branches p{
   text-transform: uppercase;
-  font-size: bold;
   font-family: monospace;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   color:rgb(13, 13, 112);
   font-weight: 900;
 }
@@ -2262,7 +2294,6 @@ p{
     left: 0;
     text-align: left;
     font-size: 23px;
-    font-family: quicksand;
     margin-bottom: 245px;
 
   }
@@ -2271,7 +2302,6 @@ p{
 
 .savings-accounts h2{
   font-size: 42px;
-  font: quicksand;
   margin-left:50px;
   color: rgb(0, 0, 0);
   padding-bottom: 0px;
@@ -2299,7 +2329,6 @@ p{
     font-size: 18px;
     width: 96%;
     height: 500px;
-    font-family: quicksand;
     background-color: rgba(234, 241, 247, 0.74);
     margin-bottom: 10px;
   }
@@ -2311,7 +2340,6 @@ p{
     left: 0;
     text-align: left;
     margin-left: 30px;
-    font: quicksand;
     font-size: 28px;
     color: rgb(1, 16, 22);
   }
@@ -2324,7 +2352,6 @@ p{
     margin-left: 0px;
     font-size: 22px;
     width: 660px;
-    font-family: quicksand;
     margin-top: 320px;
     background-color:rgba(245, 245, 245, 0.84);
     border-radius: 0px;
@@ -2338,7 +2365,6 @@ p{
     text-align: left;
     margin-left: 30px;
     font-size: 32px;
-    font-family: quicksand;
   }
 
 } 
@@ -2346,7 +2372,6 @@ p{
 
 .about-savings-account p{
   font-size: 25px;
-  font-family: Quicksand;
   color: #000000;
   margin-left: 50px;
   font-weight: 400;
@@ -2360,7 +2385,6 @@ p{
 }
  .benefits h2{
   font-size: 32px;
-  font-family: quicksand;
   margin-left:130px;
   color: rgb(6, 44, 59);
   padding-bottom: 0px;
@@ -2373,7 +2397,6 @@ p{
   #benefits h2 {
     font-size: 25px;
     font-weight: 700;
-    font-family: quicksand;
     margin-left: 20px;
   }
  }
@@ -2381,7 +2404,6 @@ p{
 
  @media(min-width:385px) and (max-width:670px){
   #benefits h2{
-    font: quicksand;
     font-size: 32px ;
     margin-left: 10px;
   }
