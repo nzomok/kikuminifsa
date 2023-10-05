@@ -141,7 +141,7 @@ h3{
     border-radius: 0px;
     margin-right: 20px;
     background-color: transparent;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 
   }
 }
@@ -164,7 +164,7 @@ h3{
     margin-left: 0px;
     background-color: transparent;
     padding-right: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 
   }
 }
@@ -207,7 +207,7 @@ h3{
     margin-left: 0px;
     display: block;
     border-radius: 5px;
-    height: 980px;
+    height: 880px;
     padding: 10px;
     padding-bottom: 20px;
     margin-bottom: 10px;
@@ -358,7 +358,7 @@ input{
   #numbers{
     margin-left: 30px;
     width: 86%;
-    margin-top: -560px;
+    margin-top: -460px;
     padding: 20px;
     box-shadow: none;
     border-top: 2px solid #050c4b;
@@ -366,7 +366,7 @@ input{
     border-bottom-left-radius: 1px ;
     border-radius: 5px;
     border: 0px;
-    height: max-content;
+    height: 400px;
 
 
   }
@@ -385,7 +385,7 @@ input{
   #numbers{
     width: 81%;
     margin-top: -580px;
-    height: max-content;
+    height: 500px;
     padding: 20px;
     margin-left: 25px;
     box-shadow: none;
