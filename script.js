@@ -66,21 +66,21 @@ function scrollfunction() {
 
 
 function computeloan(){
-  const amount = document.querySelector('#amount').value;
+  let amount = document.querySelector('#amount').value;
   const months = document.querySelector('#months').value;
 
 
   if(amount <= 5000 && amount >= 500){
-    document.querySelector('#interest-rate').innerHTML = `Our monthly interest rate for Ksh ${amount} = 4%`;
+    document.querySelector('#interest-rate').innerHTML = `Monthly interest rate for (Ksh ${amount}) = 4%`;
   }
   else if(amount > 5000 && amount <= 500000){
-    document.querySelector('#interest-rate').innerHTML = `Our monthly interest rate for Ksh ${amount} = 1.5%`
+    document.querySelector('#interest-rate').innerHTML = `Monthly interest rate for (Ksh ${amount}) = 1.5%`
   }
   else if(amount > 500000){
-    document.querySelector('#interest-rate').innerHTML = `Oops!! Try a lower amount not more than Ksh 500,000.`
+    document.querySelector('#interest-rate').innerHTML = `Sorry!..The highest loan amount you can borrow is (Ksh 500,000.)`
   }
   else if(amount < 500){
-    document.querySelector('#interest-rate').innerHTML = `Oops!! The lowest amount is Ksh 500`
+    document.querySelector('#interest-rate').innerHTML = `Sorry!...The lowest loan amount is Ksh 500`
   }
 
 
@@ -88,18 +88,20 @@ function computeloan(){
     const interest = (4 * amount) / 100;
     let payment = ((amount / months) + interest).toFixed(2);
     let total_pay = (payment * months ).toFixed(2);
+    let amounts = document.querySelector('#amount').value;
+    amount = amounts.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
 
-    document.querySelector('#entered-amount').innerHTML = `Amount Entered: Ksh ${amount}`
-    document.querySelector('#payment').innerHTML = `Monthly payment: Ksh ${payment}`
-    document.querySelector('#total-payment').innerHTML = `Total payment: Ksh ${total_pay}`
+    document.querySelector('#entered-amount').innerHTML = `${amount}`
+    document.querySelector('#payment').innerHTML = `${payment}`
+    document.querySelector('#total-payment').innerHTML = `${total_pay}`
   }
   else if(months > 3 && amount <= 5000 ){
     document.querySelector('#payment').innerHTML = `Oops!! The maximum months payable for Ksh ${amount} is 3 months`
   }
   else if(months <= 3 && amount < 500){
-    document.querySelector('#payment').innerHTML = `Oops!! The amount you entered is below the our minimum amount of Ksh 500`
+    document.querySelector('#payment').innerHTML = `Sorry!...The lowest loan amount is Ksh 500`
 
   }
 
@@ -108,11 +110,13 @@ function computeloan(){
     const interest = (1.5 * amount)/ 100;
     let payment = ((amount / months) + interest).toFixed(0);
     let total_pay = (payment * months ).toFixed(0);
+    let amounts = document.querySelector('#amount').value;
+    amount = amounts.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
-    document.querySelector('#entered-amount').innerHTML = `Amount Entered: Ksh ${amount}`
-    document.querySelector('#payment').innerHTML = `Monthly payment: Ksh ${payment}`    
-    document.querySelector('#total-payment').innerHTML = `Total payment:  Ksh ${total_pay}`
+    document.querySelector('#entered-amount').innerHTML = `${amount}`
+    document.querySelector('#payment').innerHTML = `${payment}`    
+    document.querySelector('#total-payment').innerHTML = `${total_pay}`
   }
   else if(months > 6 && amount <= 10000 && amount > 5000){
     document.querySelector('#payment').innerHTML = `Oops!! The maximum months payable for Ksh ${amount} is 6 months`
@@ -123,11 +127,13 @@ function computeloan(){
     const interest = (1.5 * amount)/ 100;
     let payment = ((amount / months) + interest).toFixed(0);
     let total_pay = (payment * months ).toFixed(0);
+    let amounts = document.querySelector('#amount').value;
+    amount = amounts.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
-    document.querySelector('#entered-amount').innerHTML = `Amount Entered: Ksh ${amount}`
-    document.querySelector('#payment').innerHTML = `Monthly payment: Ksh ${payment}`
-    document.querySelector('#total-payment').innerHTML = `Total payment:  Ksh ${total_pay}`
+    document.querySelector('#entered-amount').innerHTML = `${amount}`
+    document.querySelector('#payment').innerHTML = `${payment}`
+    document.querySelector('#total-payment').innerHTML = `${total_pay}`
   }
   else if(months > 9 && amount <= 20000 && amount > 10000){
     document.querySelector('#payment').innerHTML = `Oops!! The maximum months payable for Ksh ${amount} is 9 months`
@@ -137,11 +143,13 @@ function computeloan(){
     const interest = (1.5 * amount)/ 100;
     let payment = ((amount / months) + interest).toFixed(0);
     let total_pay = (payment * months ).toFixed(0);
+    let amounts = document.querySelector('#amount').value;
+    amount = amounts.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
-    document.querySelector('#entered-amount').innerHTML = `Amount Entered: Ksh ${amount}`
-    document.querySelector('#payment').innerHTML = `Monthly payment: Ksh ${payment}`    
-    document.querySelector('#total-payment').innerHTML = `Total payment: Ksh ${total_pay}`
+    document.querySelector('#entered-amount').innerHTML = `${amount}`
+    document.querySelector('#payment').innerHTML = `${payment}`    
+    document.querySelector('#total-payment').innerHTML = `${total_pay}`
   }
   else if(months > 12 && amount <= 50000 && amount > 20000){
     document.querySelector('#payment').innerHTML = `Oops!! The maximum months payable for Ksh ${amount} is 12 months`
@@ -151,11 +159,13 @@ function computeloan(){
     const interest = (1.5 * amount)/ 100;
     let payment = ((amount / months) + interest).toFixed(0);
     let total_pay = (payment * months ).toFixed(0);
+    let amounts = document.querySelector('#amount').value;
+    amount = amounts.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
-    document.querySelector('#entered-amount').innerHTML = `Amount Entered: Ksh ${amount}`
-    document.querySelector('#payment').innerHTML = `Monthly payment: Ksh ${payment}`    
-    document.querySelector('#total-payment').innerHTML = `Total payment: Ksh ${total_pay}`
+    document.querySelector('#entered-amount').innerHTML = `${amount}`
+    document.querySelector('#payment').innerHTML = `${payment}`    
+    document.querySelector('#total-payment').innerHTML = `${total_pay}`
   }
   else if(months > 18 && amount <= 80000 && amount > 50000){
     document.querySelector('#payment').innerHTML = `Oops!! The maximum months payable for Ksh ${amount} is 18 months`
@@ -165,11 +175,13 @@ function computeloan(){
     const interest = (1.5 * amount)/ 100;
     let payment = ((amount / months) + interest).toFixed(0);
     let total_pay = (payment * months ).toFixed(0);
+    let amounts = document.querySelector('#amount').value;
+    amount = amounts.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
-    document.querySelector('#entered-amount').innerHTML = `Amount Entered: Ksh ${amount}`
-    document.querySelector('#payment').innerHTML = `Monthly payment: Ksh ${payment}`
-    document.querySelector('#total-payment').innerHTML = `Total payment: Ksh ${total_pay}`
+    document.querySelector('#entered-amount').innerHTML = `${amount}`
+    document.querySelector('#payment').innerHTML = `${payment}`
+    document.querySelector('#total-payment').innerHTML = `${total_pay}`
   }
   else if(months > 24 && amount <= 100000 && amount > 80000){
     document.querySelector('#payment').innerHTML = `Oops!! The maximum months payable for Ksh ${amount} is 24 months`
@@ -179,11 +191,13 @@ function computeloan(){
     const interest = (1.5 * amount)/ 100;
     let payment = ((amount / months) + interest).toFixed(0);
     let total_pay = (payment * months ).toFixed(0);
+    let amounts = document.querySelector('#amount').value;
+    amount = amounts.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
     total_pay = total_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
-    document.querySelector('#entered-amount').innerHTML = `Amount Entered: Ksh ${amount}`
-    document.querySelector('#payment').innerHTML = `Monthly payment: Ksh ${payment}`    
-    document.querySelector('#total-payment').innerHTML = `Total payment: Ksh ${total_pay}`
+    document.querySelector('#entered-amount').innerHTML = ` ${amount}`
+    document.querySelector('#payment').innerHTML = `${payment}`    
+    document.querySelector('#total-payment').innerHTML = `${total_pay}`
   }
   else if(months > 36 && amount <= 500000 && amount > 100000){
     document.querySelector('#payment').innerHTML = `Oops!! The maximum months payable for Ksh ${amount} is 36 months`

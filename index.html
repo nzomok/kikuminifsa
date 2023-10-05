@@ -529,25 +529,33 @@
 
 </div>
 
-<div id="loancal">
+<div id="loancal" onload="computeloan()">
+    <h1>Loan Calculator.</h1>
+    <p>enter amount between <strong>Kes 500 and Kes 500,000</strong></p><br>
 
     <div class="input" id="input">
-        <h1>Loan Calculator.</h1>
-        <p>enter amount of money you want between <strong>Kes 500 and Kes 500,000</strong> below to get started</p>
-       <hr> <p>I Want To Borrow: Kes</p><br>
-        <input id="amount" type="number" min="500" max="500000" step="1" value="1000" oninput="computeloan()"><br>
-        <h2 id="interest-rate"></h2><hr>
-        <p>Months to pay:</p><br>
-        <input id="months" type="number" min="1" max="36" value="1" step="1" oninput="computeloan()">
-
+        <div class="user-input">
+            <p>I Want To Borrow: Kes</p><br>
+            <input id="amount" type="number" min="500" max="500000" step="1" value="1000"><br>
+            <h2 id="interest-rate"></h2>
+        </div>
+        <div class="user-input">
+            <p>Months to pay:</p><br>
+            <input id="months" type="number" min="1" max="36" value="1" step="1">
+        </div>
+        <button id="calculate" onclick="computeloan()">Calculate</button>
     </div>
-    
+                    
     <div class="numbers" id="numbers">
+        <h4>Total Amount (KES)</h4>
         <h2 id="entered-amount"></h2>
-        <h2 id="payment"></h2><br>
-        <h2 id="total-payment"></h2><br><hr>
-        <h4>For more information, please contact <strong>0722758088</strong> or visit your nearest F.S.A branch.</h4>
+        <h4>Monthly Repayment (KES)</h4>
+        <h2 id="payment"></h2>
+        <h4>Total Repayments (KES)</h4>
+        <h2 id="total-payment"></h2><hr>
+        <h4>For more information,contact <strong>0722758088</strong> or visit your nearest <strong>F.S.A branch.</strong></h4>
     </div>
+
 
 
 
