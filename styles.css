@@ -952,13 +952,13 @@ p{
 @media(min-width: 670px){
   #links{
     margin-left: 250px;
-    width: fit-content;
+    width: 1080px;
     margin-top: -60px;
-    height: auto;
+    height: 129px;
     flex-grow: 1;
     display: flex;
     padding-top: -5px;
-    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.521);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 
     
@@ -986,7 +986,7 @@ p{
   #links{
     margin-left: 30px;
     border: 0px;
-    width: 619px;
+    width: 620px;
     margin-top: 60px;
     height:296px;
     flex-grow: 1;
@@ -1018,10 +1018,10 @@ p{
 @media(min-width:670px){
   #more-link{
     height: 130px;
-    width: 180px;
-    margin-right: 1px;
+    width: 200px;
+    margin-right: -1.5px;
+    margin-left: 1.8px;
     display: inline-block;
-    border-radius: 5px;
   }
 }
 
@@ -1041,7 +1041,7 @@ p{
   #more-link{
     height: 150px;
     width: 207.6px;
-    margin: -2.3px;
+    margin: -2.2px;
     margin-bottom: 3.3px;
     margin-top: -3px;
     display: inline-block;
