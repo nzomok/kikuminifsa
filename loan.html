@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="loan.css">
     <title>KIKUMINI-WOTE F.S.A</title>
     <script src="script.js"></script>
+    <script>
+        // Disable back and forward functionality
+        window.onload = function () {
+            history.pushState(null, null, document.URL);
+            window.addEventListener('popstate', function () {
+                history.pushState(null, null, document.URL);
+            });
+
+            // Disable forward button
+            window.onbeforeunload = function () {
+                return null;
+            };
+        };
+    </script>
 
 </head>
 
@@ -55,8 +69,9 @@
 
     <div class="emergency-loan" id="emergency-loan">
         <h1><strong>404</strong></h1>
-        <p>The page you are looking for can't be found!!!</p>
-        <h4>WE ARE STILL BUILDING COME BACK LATER!</h4>
+        <img src="underconstruction.jpg" alt="">
+        <p>This site is under construction.</p>
+        <h4>WE WILL BE ONLINE SOON.</h4>
         <button class="button" id="go-home" onclick="gohome()">
             <span>What next!</span>
         </button>
