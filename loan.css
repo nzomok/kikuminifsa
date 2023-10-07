@@ -256,8 +256,8 @@
    }
 
    @media (min-width:385px) and (max-width:671px){
-    #emergency-loan h4, p{
-        font-size: 2rem;
+    #emergency-loan p{
+        font-size: 1.3rem;
     
     }
    }
