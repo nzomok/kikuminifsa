@@ -6,7 +6,7 @@
     animation-name: animatebottom;
     animation-duration: 1s;
     padding-top:0px;
-    background-color:rgba(255, 255, 255, 0.432));
+    background-color:rgba(255, 255, 255, 0.432);
   }
   
   @-webkit-keyframes animatebottom {
@@ -51,12 +51,16 @@
       width: 60px;
       height: 60px;
       border-radius: 50%;
-      transform: rotateX(70deg);
+      transform: rotateX(60deg);
       animation: 1s spin linear infinite;
+      border: 0px solid ;
+      border-top: 0px;
+      border-left: 0px;
+      border-bottom: 0px;
     }
     .loader:after {
       color: #0099ff;
-      transform: rotateY(70deg);
+      transform: rotateY(60deg);
       animation-delay: .4s;
     }
 
@@ -81,10 +85,10 @@
   @keyframes spin {
     0%,
     100% {
-      box-shadow: .2em 0px 0 0px currentcolor;
+      box-shadow: .3em 0px 0 0px currentcolor;
     }
     12% {
-      box-shadow: .2em .2em 0 0 currentcolor;
+      box-shadow: .3em .2em 0 0 currentcolor;
     }
     25% {
       box-shadow: 0 .2em 0 0px currentcolor;

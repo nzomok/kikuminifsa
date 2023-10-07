@@ -2,7 +2,7 @@
 
 html {
     font-family: sans-serif;
-    background-color: rgb(241, 241, 237);
+    background-color: whitesmoke;
     line-height: 1.15;
     margin: -8px;
     -webkit-text-size-adjust: 100%;
@@ -132,8 +132,8 @@ h3{
   #loancal{
     display: block;
     height: max-content;
-    width: 640px;
-    margin-left: 10px;
+    width: 620px;
+    margin-left: 20px;
     border-radius: 0px;
     margin-right: 20px;
     background-color: transparent;
@@ -209,7 +209,7 @@ h3{
     margin-bottom: 10px;
     background-color: white;
     border: 0px;
-    box-shadow: 0px 0px 5px -0px rgba(0, 0, 0, 0.622);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 
   }
 }
@@ -259,7 +259,7 @@ input{
 
 @media (min-width:385px) and (max-width:670px){
   #amount, #months{
-    width: 570px;
+    width: 550px;
     padding-left: 10px;
     height: 70px;
   }
@@ -275,23 +275,32 @@ input{
 
 #calculate{
   padding: 10px;
+  font-family: "JetBrains Mono",monospace;
   width: 300px;
   height: 60px;
   margin-left: 20px;
   margin-top: 65px;
-  box-shadow: 0px 0px 10px 0px rgb(20, 195, 201);
   border: 0px;
   background-color: #050c4b;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 600;
   cursor: pointer;
   color: rgb(0, 183, 255);
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+
 }
 
 
 @media (min-width:385px) and (max-width:670px){
   #calculate{
-    width: 590px;
+    width: 570px;
     padding-left: 10px;
     height: 70px;
     margin-top: 30px;
@@ -318,6 +327,72 @@ input{
 
 
 }
+
+
+#calculate:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+#calculate:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#calculate:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .numbers{
   display: block;
   background-color: rgba(9, 161, 255, 0.616);
@@ -352,8 +427,8 @@ input{
 
 @media(min-width:385px) and (max-width:670px){
   #numbers{
-    margin-left: 30px;
-    width: 86%;
+    margin-left: 9px;
+    width: 91%;
     margin-top: -460px;
     padding: 20px;
     box-shadow: none;
@@ -795,10 +870,10 @@ cursor: pointer;
 @media (min-width: 385px) and (max-width: 670px){
   #main-container{
     width: 680px;
-    color:rgb(0, 128, 255);
+    color: rgb(0, 183, 255);
     background-position: center;
     background-size:inherit;
-    height: 450px;
+    height: 500px;
     font-weight: 900;
 
   }
@@ -845,7 +920,7 @@ p{
 
 @media(min-width:385px) and (max-width: 670px){
   #top-animation{
-    font-size: 1.9rem;
+    font-size: 1.8rem;
 
   }
 }
@@ -901,7 +976,7 @@ p{
     display: flex;
     padding-top: -5px;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px 9px rgba(0, 1, 0, 0.15);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 
     
   }
@@ -917,7 +992,7 @@ p{
     display: inline-block;
     padding-top: -5px;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px 9px rgba(0, 1, 0, 0.15);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 
     
   }
@@ -925,15 +1000,16 @@ p{
 
 @media(min-width:385px) and (max-width: 670px){
   #links{
-    margin-left: 15px;
-    width: 650px;
-    margin-top: 20px;
+    margin-left: 30px;
+    border: 0px;
+    width: 620px;
+    margin-top: 60px;
     height: auto;
     flex-grow: 1;
     padding-top: -5px;
     border-radius: 5px;
     display: inline-block;
-    box-shadow: 0px 0px 10px 9px rgba(6, 46, 105, 0.15);
+    box-shadow: rgba(17, 17, 26, 0.116) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 
     
   }
@@ -978,8 +1054,8 @@ p{
 
 @media(min-width:385px) and (max-width: 670px){
   #more-link{
-    height: 140px;
-    width: 215px;
+    height: 150px;
+    width: 205px;
     margin: -1px;
     margin-bottom: 2.5px;
     border-radius: 5px;
@@ -1263,7 +1339,7 @@ p{
   height: 190px;
   width:350px;
   margin: 10px;
-  box-shadow: 0px 0px 90px 0px rgba(8, 89, 155, 0.651);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   background-color: rgb(255, 255, 255);
   text-align: center;
   border-radius: 20px;
@@ -1363,6 +1439,7 @@ p{
     margin-top: 0px;
     padding: 10px;
     margin-bottom: 10px;
+    
   }
 }
 
@@ -1408,7 +1485,7 @@ p{
     border: 0px;
     margin-left: 8%;
     background-color: rgb(255, 247, 247);
-    box-shadow: 0px 0px 10px rgb(19, 72, 116);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   
   }
 }
@@ -1419,7 +1496,7 @@ p{
     margin-top: 40px;
     border: 0px;
     margin-left: 10px;
-    box-shadow: 0px 10px 10px 0px rgb(141, 162, 180);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   
   }
 }
@@ -1433,7 +1510,7 @@ p{
     border: 0px;
     margin-left: 13%;
     background-color: rgb(255, 247, 247);
-    box-shadow: 0px 0px 10px rgb(19, 72, 116);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   }
 }
 
@@ -1445,7 +1522,7 @@ p{
     border: 0px;
     font-size: 1.0rem;
     border-radius: 0px;
-    box-shadow: 0px 0px 10px 0px rgb(141, 162, 180);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   }
 }
 
@@ -1458,7 +1535,7 @@ p{
     border: 0px;
     border-radius: 5px;
     font-size: 1.0rem;
-    box-shadow: 0px 10px 10px 0px rgb(141, 162, 180);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   }
 }
 
