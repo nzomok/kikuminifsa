@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="styles.css">
     <title>KIKUMINI-WOTE F.S.A</title>
     <script src="script.js"></script>
+    <script>
+        // Disable back and forward functionality
+        window.onload = function () {
+            history.pushState(null, null, document.URL);
+            window.addEventListener('popstate', function () {
+                history.pushState(null, null, document.URL);
+            });
+
+            // Disable forward button
+            window.onbeforeunload = function () {
+                return null;
+            };
+        };
+        </script>
 </head>
 
 
@@ -32,19 +46,19 @@
             <a href="save.html" >HOW TO SAVE</a>
         </div>
         <div class="links">
-            <a href="#" >OUR TARIFFS</a>
+            <a href="loan.html" >OUR TARIFFS</a>
         </div>
         <div class="links">
-            <a href="#" onclick="openAd()" >PAYBILL AND PAYMENTS</a>
+            <a href="loan.html" onclick="openAd()" >PAYBILL AND PAYMENTS</a>
         </div>
         <div class="links">
             <a href="#loancal" onclick="scroll()">LOAN CALCULATOR</a>
         </div>
         <div class="links">
-            <a href="#" >OUR TEAM</a>
+            <a href="loan.html" >OUR TEAM</a>
         </div>
         <div class="links">
-            <a href="#" >CONTACT US</a>
+            <a href="loan.html" >CONTACT US</a>
         </div>
 
     </div>
@@ -77,14 +91,14 @@
             </div> <hr>
             <div class="services">
                 <div class="fsa-services">
-                    <a href="#"> Our Tarrifs</a>
+                    <a href="loan.html"> Our Tarrifs</a>
                 </div>
             </div>
             <hr>
             <div class="payments">
                 <div class="fsa-payments">
                     
-                    <a href="#"> Paybill & Payments</a>
+                    <a href="loan.html"> Paybill & Payments</a>
                 </div>
             </div>
             <hr>
@@ -97,19 +111,19 @@
             <hr>
             <div class="partners">
                 <div class="fsa-partners">
-                    <a href="#"> Our Partners</a>
+                    <a href="loan.html"> Our Partners</a>
                 </div>
             </div>
             <hr>
             <div class="events">
                 <div class="fsa-events">
-                    <a href="#"> Events</a>
+                    <a href="loan.html"> Events</a>
                 </div>
             </div>
             <hr>
             <div class="contacts-us">
                 <div class="fsa-contacts">
-                    <a href="#">Contacts</a>
+                    <a href="loan.html">Contacts</a>
                 </div>
             </div>
         </div>
@@ -155,7 +169,7 @@
         </a>
     </div>
     <div class="tariffs" id="more-link">
-        <a href="#"  id="tarrif"><img src="interest-rate.png" alt="" id="tarrif-img">
+        <a href="loan.html"  id="tarrif"><img src="interest-rate.png" alt="" id="tarrif-img">
         <h4 class="tariffs-tag2">Our Tariffs</h4>
         </a>
     </div>
@@ -174,12 +188,12 @@
         </a>
     </div>
     <div class="tariffs" id="more-link">
-        <a href="#"><img src="location.png" alt="" id="tarrif-img">
+        <a href="loan.html"><img src="location.png" alt="" id="tarrif-img">
         <h4 class="tariffs-tag2">Find Us</h4>
         </a>
     </div>
     <div class="tariffs" id="more-link">
-        <a href="#"><img src="support.png" alt="" id="tarrif-img">
+        <a href="loan.html"><img src="support.png" alt="" id="tarrif-img">
         <h4 class="tariffs-tag2">Help</h4>
         </a>
     </div>
