@@ -2844,16 +2844,79 @@ p{
 .details a{
   text-decoration:  none;
   font-size: 22px;
-  font-weight: 900;
-  background-color: rgb(0, 183, 255);
-  padding: 10px;
+  font-weight: 900;  padding: 10px;
   border-radius: 5px;
-  box-shadow: 0px 0px 20px 0px rgb(255, 0, 0);
   margin-top: 500px;
-  margin-left: 110px;
+  margin-left: 150px;
   text-transform: uppercase;
 
 }
+
+.uiverse {
+  position: relative;
+  background: linear-gradient(320deg, rgb(0, 132, 255), rgb(224, 228, 241));
+  color: #000;
+  padding: 15px;
+  margin: 0px;
+  margin-left: 100px;
+  border-radius: 10px;
+  width: 250px;
+  height: 50px;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 10px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.uiverse:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+svg:hover span,
+svg:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.uiverse:hover,
+.uiverse:hover .tooltip,
+.uiverse:hover .tooltip::before {
+  background: linear-gradient(320deg, rgb(3, 77, 146), rgb(0, 60, 255));
+  color: #ffffff;
+}
+
 @media(min-width:385px) and (max-width:670px){
   #details-a{
     margin-left: 20px;
@@ -2873,14 +2936,3 @@ p{
 }
 
 
-.details a:hover{
-  box-shadow: 0px 0px 10px 0px rgb(7, 234, 49);
-  font-size: 21px;
-  transition: 0.2s ease-in;
-  -webkit-transform-origin-z: center;
-  background-color: rgb(3, 21, 48);
-  color: white;
-
-
-
-}

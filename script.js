@@ -212,3 +212,8 @@ function loadpage(){
   document.getElementById("loader").style.display = "none";
   document.getElementById("loan-main-container").style.display = "block";
 }
+
+function gohome(){
+  window.open("index.html", "_self");
+}
+
