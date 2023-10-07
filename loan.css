@@ -1,5 +1,4 @@
 .loan-main-container {
-    position: relative;
     display: none;
     width: 1580px;
     -webkit-animation-name: animatebottom;
@@ -7,7 +6,7 @@
     animation-name: animatebottom;
     animation-duration: 1s;
     padding-top:0px;
-    background-color:rgba(255, 255, 255, 0.432);
+    background-color:rgba(255, 255, 255, 0.432));
   }
   
   @-webkit-keyframes animatebottom {
@@ -177,7 +176,8 @@
     text-align: center;
     margin-top: -10px;
     margin-bottom: 0px;
-    transform: rotatez(-11deg);
+    z-index: 1;
+    position: relative;
 }
 
 .emergency-loan p, h4{
@@ -247,8 +247,10 @@
    @media (max-width:384px){
     #emergency-loan img {
         width: 100%;
-        margin-left: -90px;
+        margin-left: -140px;
         margin-top: -70px;
+        z-index: 0;
+        position: relative;
 
     }
    }
@@ -256,7 +258,8 @@
    @media (max-width:384px){
     #emergency-loan h1{
         font-size: 17.5rem;
-        transform: rotateZ(-15deg);
+        z-index: 1;
+        position: relative;
 
     }
    }
@@ -291,7 +294,9 @@
    @media (min-width:385px) and (max-width:670px){
     #emergency-loan img{
         width: 100%;
-        margin-left: -150px;
+        margin-left: -200px;
+        z-index: 0;
+        position: relative;
 
     }
    }
@@ -311,7 +316,7 @@
     #emergency-loan .button{
         margin-left: 0px;
         bottom: 0px;
-        margin-top: 30%;
+        margin-top: 10%;
     
     }
    }
