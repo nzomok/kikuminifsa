@@ -28,13 +28,6 @@ function openAd(){
 }
 
 
-/* let x = document.getElementById("candlads");
-setInterval(function(){
-  x.style.height = "900px";
-  x.style.marginTop = ("-100%");
-  document.getElementById("open-ad-icon").style.display = "none";
-}, 20000); */
-
 
 
     var loan = document.getElementByClassName("more-services");
@@ -205,7 +198,17 @@ function computeloan(){
   else if(amount > 500000){
     document.querySelector('#payment').innerHTML = `Amount ${amount} is too high`
   }
+}
 
 
+/*loan page js*/
 
+var myvar;
+
+function loading(){
+  myvar = setTimeout(loadpage, 5000);
+}
+function loadpage(){
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("loan-main-container").style.display = "block";
 }
