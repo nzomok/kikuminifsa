@@ -1015,11 +1015,11 @@ p{
 }
 
 
-@media(min-width:670px){
+@media(min-width:671px){
   #more-link{
     height: 130px;
     width: 200px;
-    margin-right: -1.5px;
+    margin-right: -1.2px;
     margin-left: 1.8px;
     display: inline-block;
   }
