@@ -1027,9 +1027,9 @@ p{
 @media(min-width:670px){
   #more-link-last{
     height: 130px;
-    width: 200px;
+    width: 205px;
     margin-right: -2px;
-    margin-left: -1.5px;
+    margin-left: -1px;
     margin-top: -1px;
     display: inline-block;
   }
@@ -1065,7 +1065,7 @@ p{
     margin: 2px;
     margin-right: -2px;
     margin-bottom: -1.5px;
-    margin-top: -1.5px;
+    margin-top: -1px;
     margin-left: -1px;
     display: inline-block;
 
