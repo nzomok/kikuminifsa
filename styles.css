@@ -2862,13 +2862,17 @@ p{
 
 .more-accounts{
   width: 100%;
-  height: 700px;
+  height: 100%;
   background-color: rgb(255, 255, 255);
   display: flex;
   margin: 0px;
   margin-top: 40px;
   padding-bottom: 20px;
   margin-bottom: -20px;
+}
+.mySlides {display:none;
+
+
 }
 
 @media(min-width:385px) and (max-width:670px){
@@ -2893,7 +2897,7 @@ p{
 }
 
 @media(min-width:385px) and (max-width:670px){
-  #account{
+  .myslides{
     margin-left: 80px;
     margin-top: -40px;
     width: 80%;
@@ -2901,7 +2905,7 @@ p{
   }
 }
 @media(max-width:384px){
-  #account{
+  .myslides{
     margin-left: 40px;
     margin-top: -40px;
     width: 80%;
@@ -2909,17 +2913,42 @@ p{
   }
 }
 
+@media(min-width:670px){
+  .myslides{
+    margin-left: 400px;
+    margin-top: -40px;
+    width: 80%;
+    height: auto;
+    justify-content: space-between;
+  }
+}
 
-.account img{
+
+.mySlides img{
   width: 80%;
   border-radius: 20px;
   align-self: center;
-  margin: 50px;
+  margin: 0px;
   margin-right: 0px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 30px 0px rgb(8, 89, 155);
 
 }
+
+@media (min-width:670px){
+  .mySlides, img{
+    width: 50%;
+    border-radius: 20px;
+    align-self: center;
+    margin: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 30px 0px rgb(8, 89, 155);
+  
+  }
+}
+
+
 .details{
   margin-top: -40px;
   background-color: transparent;
@@ -2976,6 +3005,37 @@ p{
 
 }
 
+@media(max-width:384px){
+.what-other-looked{
+  font-size: 28px;
+  text-align: center;
+  text-decoration: dotted;
+  font-weight: 600;
+ 
+}
+}
+
+@media(min-width:385px) and (max-width:670px){
+  .what-other-looked{
+    font-size: 28px;
+    text-align: center;
+    text-decoration: dotted;
+    font-weight: 600;
+   
+  }
+  }
+
+  @media(min-width:670px){
+    .what-other-looked{
+      font-size: 22px;
+      text-align: center;
+      text-decoration: dotted;
+      font-weight: 600;
+      margin-left: 20px;
+     
+    }
+    }
+
 .uiverse {
   position: relative;
   background: linear-gradient(320deg, rgb(0, 132, 255), rgb(224, 228, 241));
@@ -3008,6 +3068,12 @@ p{
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@media(min-width:385px) and (max-width:670px){
+  .uiverse{
+    margin-left: 200px;
+  }
 }
 
 .tooltip::before {
@@ -3320,4 +3386,124 @@ marquee{
   padding: 10px;
   font-weight: 600;
 }
+
+
+/*our help page*/
+
+.contact-fsa{
+  padding-top: 100px;
+  height: 500px;
+}
+
+@media (max-width:384px){
+  .contact-fsa{
+    width: 474px;
+    height: 100%;
+    background-color:white;
+    margin-bottom: 20px;
+
+
+  }
+}
+@media (min-width:385px) and (max-width:670px){
+  .contact-fsa{
+    width: 680px;
+    height: 100%;
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 20px;
+
+
+  }
+}
+@media (min-width:670px){
+  .contact-fsa{
+    width: 1580px;
+    height: 100%;
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 20px;
+
+
+  }
+}
+
+@media (max-width:384px){
+  .talk-to-us{
+    width: 435px;
+    height: 900px;
+    margin-left: 20px;
+    margin-top:10px;
+    background-color: rgb(0, 183, 255);
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    box-shadow: rgba(10, 10, 20, 0.1) 0px 8px 20px, rgba(10, 10, 20, 0.1) 0px 10px 50px, rgba(10, 10, 20, 0.1) 0px 20px 70px;
+  }
+}
+
+@media (min-width:385px) and (max-width:670px){
+  .talk-to-us{
+    width: 640px;
+    height: 900px;
+    margin-left: 20px;
+    margin-top:10px;
+    background-color: rgb(0, 183, 255);
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    box-shadow: rgba(10, 10, 20, 0.1) 0px 8px 20px, rgba(10, 10, 20, 0.1) 0px 10px 50px, rgba(10, 10, 20, 0.1) 0px 20px 70px;
+
+  }
+}
+@media (min-width:670px){
+  .talk-to-us{
+    width: 640px;
+    height: 900px;
+    margin-left: 34%;
+    margin-top:10px;
+    background-color: rgb(0, 183, 255);
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    box-shadow: rgba(10, 10, 20, 0.1) 0px 8px 20px, rgba(10, 10, 20, 0.1) 0px 10px 50px, rgba(10, 10, 20, 0.1) 0px 20px 70px;
+
+  }
+}
+
+@media(max-width:384px){
+  .talk-to-us, h2{
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width:385px) and (max-width:670px){
+  .talk-to-us, h2{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+
+
+  }
+}
+@media (min-width:670px){
+  .talk-to-us, h2{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+
+
+  }
+}
+
+.talk-to-us img{
+  width: 20%;
+  border-radius: 30px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  margin-top: 100px;
+}
+
 

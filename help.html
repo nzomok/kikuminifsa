@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="fsa logo.png" class="icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>KIKUMINI-WOTE F.S.A location</title>
+    <script src="script.js"></script>
+    <script>
+        // Disable back and forward functionality
+        window.onload = function () {
+            history.pushState(null, null, document.URL);
+            window.addEventListener('popstate', function () {
+                history.pushState(null, null, document.URL);
+            });
+
+            // Disable forward button
+            window.onbeforeunload = function () {
+                return null;
+            };
+        };
+        </script>
+</head>
+<nav class="top_navigation">
+    <div class="menu">
+        <span class="open-menu-icon" id="mobile-menu" onclick="openMenu()"> &#9776;</span>
+    
+    
+    
+    </div>
+    
+    
+        <div class="bank_logo" >
+            <a href="index.html" id="brand"><img src="fsa good logo.png" class="fsa_logo" alt="">
+            <h3>KIKUMINI-WOTE F.S.A</h3></a>
+        </div>
+        <div class="links-top-nav" id="links-top-nav">
+            <div class="links">
+                <a href="save.html" >upcoming events</a>
+            </div>
+            <div class="links">
+                <a href="loan.html" >Our tarrifs</a>
+            </div>
+            <div class="links">
+                <a href="loan.html" onclick="openAd()" >paybill and payments</a>
+            </div>
+            <div class="links">
+                <a href="#loancal" onclick="scroll()">loan calculator</a>
+            </div>
+            <div class="links">
+                <a href="loan.html" >our team</a>
+            </div>
+            <div class="links">
+                <a href="loan.html" >contact us</a>
+            </div>
+            <div class="links">
+                <a href="index.html " >home</a>
+    
+        </div>
+</nav>
+<body>
+    <div class="menu">
+        <div id="overlay-sidebar">
+    
+        </div>
+        <div class="darshboard" id="sidebar">
+            <div class="top-sidebar">
+                <span class="close-menu-icon" id="close-menu-bar" onclick="closeMenu()">&times;</span>
+                <img src="fsa good logo.png" alt="" class="icon">
+                <h2>KIKUMINI-WOTE F.S.A</h2>
+    
+            </div>
+            <div class="what-wedo">
+                <br>
+                <hr>
+                <div class="home">
+                    <div class="fsa-home">
+                        
+                        <a href="index.html"> Home</a>
+                    </div>
+                </div> <hr>
+                <div class="services">
+                    <div class="fsa-services">
+                        <a href="loan.html"> Our Tarrifs</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="payments">
+                    <div class="fsa-payments">
+                        
+                        <a href="loan.html"> Paybill & Payments</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="staff">
+                    <div class="fsa-team">
+                        
+                        <a href="#"> Our Team</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="partners">
+                    <div class="fsa-partners">
+                        <a href="loan.html"> Our Partners</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="events">
+                    <div class="fsa-events">
+                        <a href="loan.html"> Events</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="contacts-us">
+                    <div class="fsa-contacts">
+                        <a href="loan.html">Contacts</a>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="contact-us">
+                <h1>Talk to us</h1><hr><br>
+                <h3>PHONE NUMBER</h3>
+                <h4>+2547 4533 6418</h4>
+                <h4>+2541 1331 1563</h4><br>
+                <h3>email address</h3>
+                <p>caesarjjoshua@gmail.com</p>
+                <p>kikuminifsa@gmail.com</p>
+    
+            </div>-->
+            <div class="disclamer-sidebar" >
+                <p>Designed and published by C & L TECH HUB</p>
+                <P>&copy;2023 F.S.A Kikumini</P>
+            
+            </div>
+            
+        </div>
+        
+    
+    </div>
+
+
+    <div class="contact-fsa">
+        <div class="talk-to-us">
+            <h2>Talk to us</h2>
+            <img src="phone-icon.png" alt="">
+            <h2>Contact Centre:</h2>
+            <p>+254 722 758088<br>+254 707 789302<br>+254 712 380212<br>+254 794 251656</p><br>
+            <img src="email-icon.png">
+            <p>kikuminifsa@gmail.com</p>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+<div class="disclamer" id="disclamer">
+    <p>Designed and published by C & L TECH HUB</p>
+    <P>&copy;2023 F.S.A Kikumini</P>
+
+</div>
+</body>
+</html>
