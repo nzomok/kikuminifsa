@@ -12,7 +12,7 @@
 
 
 
-<body onload="fsaPaybill()" class="animate-bottom" id="paybill">
+<body onload="fsaPaybill()" class="animate-bottom" id="paybill" onloadstart="carousel()">
     <nav class="top_navigation">
         <div class="menu">
             <span class="open-menu-icon" id="mobile-menu" onclick="openMenu()"> &#9776;</span>
@@ -143,345 +143,99 @@
         </div>
     </div>
 
+
+    <div id="overlay">
+    </div>
     <div class="candlads"  id="candlads">
-        <div id="overlay">
-            
-        </div>
         <span class="close-ad-icon" id="close-ad-bar" onclick="closeAd()">&times;</span>
-        <p class="bank-slogan2">PAYBILL NO: <strong>7132643</strong></p>
-        <p class="bank-slogan2">ACCOUNT NO: <strong> YOUR ID NUMBER</strong></p>
-        <img src="phone-screen.jpg" alt="">
+        <div class="steps-images" id="step-images">
+            <div class="paybill-and-account">
+                <h3> <strong>LIPA NA M-PESA PROCESS</strong></h3>
+            </div>
+            <div class="steps" id="steps">
+                <div class="step-one">
+                    <h1>1.</h1>
+                </div>
+                <div class="descriptions">
+                    <h3>Go to M-PESA menu!</h3>
     
+                </div>
+            </div>
+            <div class="steps" id="steps">
+                <div class="step-one">
+                    <h1>2.</h1>
+                </div>
+                <div class="descriptions">
+                    <h3>Select LIPA NA M-PESA</h3>
     
+                </div>
+            </div>
+            <div class="steps" id="steps">
+                <div class="step-one">
+                    <h1>3.</h1>
+                </div>
+                <div class="descriptions">
+                    <h3>Then Enter BUSINESS NUMBER: <strong>7132643</strong></h3>
     
-    <div class="steps-images" id="step-images">
-            <div class="steps-images-details" id="steps-images-details">
-                <div class="step-number" id="step-number">
-                    <h1> STEP <br> 1</h1>
-                </div>
-                <div class="step-one" id="step-one">
-                    <div class="safaricom">
-                        <h4>Safaricom</h4>
-                    </div>
-                    <div class="safaricom1">
-                        <h5>safaricom</h5><hr>
-                    </div>
-                    <div class="safaricom-plus">
-                        <h4>Safaricom+</h4>
-                    </div><hr>
-                    <div class="important">
-                       <h3>M-PESA</h3>
-                       <div class="directions">
-                            <div class="arrowSliding">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay1">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay2">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay3">
-                              <div class="arrow"></div>
-                            </div>
-                       </div>
-                    </div>
                 </div>
             </div>
-            <div class="steps-images-details" id="steps-images-details">
-                <div class="step-number" id="step-number">
-                    <h1>STEP<br> 2</h1>
+            <div class="steps" id="steps">
+                <div class="step-one">
+                    <h1>4.</h1>
                 </div>
-                <div class="step-one" id="step-one">
-                    <div class="safaricom">
-                        <h4>Safaricom</h4>
-                    </div>
-                    <div class="safaricom1">
-                        <h5>SIM toolkit</h5><hr>
-                    </div>
-                    <div class="safaricom-plus">
-                        <h4>Send Money</h4>
-                    </div><hr>
-                    <div class="safaricom-plus">
-                        <h5>Withdraw Cash</h5>
-                    </div><hr>
-                    <div class="safaricom-plus">
-                        <h4>Buy Airtime</h4>
-                    </div><hr>
-                    <div class="safaricom-plus">
-                        <h4>Loans and Savings</h4>
-                    </div><hr>
-                    <div class="important">
-                       <h3>Lipa na M-PESA</h3>
-                       <div class="directions">
-                            <div class="arrowSliding">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay1">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay2">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay3">
-                              <div class="arrow"></div>
-                            </div>
-                       </div>
-                    </div><hr>
-                    <div class="safaricom-plus">
-                        <h4>My Account</h4>
-                    </div>
+                <div class="descriptions">
+                    <h3>Enter YOUR ID NUMBER as your A/C NUMBER.</h3>
+    
                 </div>
             </div>
-            <div class="steps-images-details" id="steps-images-details">
-                <div class="step-number" id="step-number">
-                    <h1>STEP<br>3</h1>
+            <div class="steps" id="steps">
+                <div class="step-one">
+                    <h1>5.</h1>
                 </div>
-                <div class="step-one" id="step-one">
-                    <div class="safaricom">
-                        <h4>Safaricom</h4>
-                    </div>
-                    <div class="safaricom1">
-                        <h5>Lipa na M-PESA</h5>
-                    </div><hr>
-                    <div class="important">
-                       <h3>Pay Bill</h3>
-                       <div class="directions">
-                            <div class="arrowSliding">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay1">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay2">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay3">
-                              <div class="arrow"></div>
-                            </div>
-                       </div>
-                    </div><hr>
-                    <div class="safaricom-plus">
-                        <h4>Buy Goods and Services</h4>
-                    </div><hr>
-                    <div class="safaricom-plus">
-                        <h4>Pochi La Biashara</h4>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="steps-images-details" id="steps-images-details">
-                <div class="step-number" id="step-number">
-                    <h1>STEP<br> 4</h1>
-                </div>
-                <div class="step-one" id="step-one">
-                    <div class="safaricom">
-                        <h4>Safaricom</h4>
-                    </div>
-                    <div class="safaricom1">
-                        <h5>SIM toolkit</h5><hr>
-                    </div>
-                    <div class="safaricom-plus">
-                        <h4>Search SIM Contact</h4>
-                    </div><hr>
-                    <div class="important">
-                       <h3>Enter business no.</h3>
-                       <div class="directions">
-                            <div class="arrowSliding">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay1">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay2">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay3">
-                              <div class="arrow"></div>
-                            </div>
-                       </div>
-                    </div>
+                <div class="descriptions">
+                    <h3>Enter Amount</h3>
+    
                 </div>
             </div>
-            <div class="steps-images-details" id="steps-images-details">
-                <div class="step-number" id="step-number">
-                    <h1>STEP<br>5</h1>
+            <div class="steps" id="steps">
+                <div class="step-one">
+                    <h1>6.</h1>
                 </div>
-                <div class="step-one" id="step-one">
-                    <div class="safaricom">
-                        <h4>Safaricom</h4>
-                    </div>
-                    <div class="enter-business-no">
-                        <h5>Enter business no.</h5>
-                    </div>
-                    <div class="important">
-                        <div class="fsa-paybill-no">
-                            <h2>7132643</h3>
-                        </div>
-                       <div class="directions">
-                            <div class="arrowSliding">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay1">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay2">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay3">
-                              <div class="arrow"></div>
-                            </div>
-                       </div>
-                    </div>
+                <div class="descriptions">
+                    <h3>Enter Your M-PESA PIN.</h3>
+    
                 </div>
             </div>
-            <div class="steps-images-details" id="steps-images-details">
-                <div class="step-number" id="step-number">
-                    <h1>STEP <br>6</h1>
+            <div class="steps" id="steps">
+                <div class="step-one">
+                    <h1>7.</h1>
                 </div>
-                <div class="step-one" id="step-one">
-                    <div class="safaricom">
-                        <h4>Safaricom</h4>
-                    </div>
-                    <div class="safaricom1">
-                        <h5>SIM toolkit</h5><hr>
-                    </div>
-                    <div class="safaricom-plus">
-                        <h4>Search SIM Contact</h4>
-                    </div><hr>
-                    <div class="important">
-                       <h3>Account  no.</h3>
-                       <div class="directions">
-                            <div class="arrowSliding">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay1">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay2">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay3">
-                              <div class="arrow"></div>
-                            </div>
-                       </div>
-                    </div>
+                <div class="descriptions">
+                    <h3>Confirm Your Payment.</h3>
+    
                 </div>
             </div>
-            <div class="steps-images-details" id="steps-images-details">
-                <div class="step-number" id="step-number">
-                    <h1>STEP<br> 7</h1>
+            <div class="steps" id="steps">
+                <div class="step-one">
+                    <h1>8.</h1>
                 </div>
-                <div class="step-one" id="step-one">
-                    <div class="safaricom">
-                        <h4>Safaricom</h4>
-                    </div>
-                    <div class="enter-business-no">
-                        <h5>Enter Account no.</h5>
-                    </div>
-                    <div class="important">
-                        <div class="fsa-paybill-no">
-                            <h2>YOUR ID NUMBER</h3>
-                        </div>
-                       <div class="directions">
-                            <div class="arrowSliding">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay1">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay2">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay3">
-                              <div class="arrow"></div>
-                            </div>
-                       </div>
-                    </div>
+                <div class="descriptions">
+                    <h3>Well Done !! Payment has been received.</h3>
+    
                 </div>
             </div>
-            <div class="steps-images-details" id="steps-images-details">
-                <div class="step-number" id="step-number">
-                    <h1> STEP <br>8</h1>
+            <div class="steps" id="steps">
+                <div class="step-one">
+                    <h1>9.</h1>
                 </div>
-                <div class="step-one" id="step-one">
-                    <div class="safaricom">
-                        <h4>Safaricom</h4>
-                    </div>
-                    <div class="enter-business-no">
-                        <h5>Enter Amount</h5>
-                    </div>
-                    <div class="important">
-                        <div class="fsa-paybill-no">
-                            <h2>1000</h3>
-                        </div>
-                       <div class="directions">
-                            <div class="arrowSliding">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay1">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay2">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay3">
-                              <div class="arrow"></div>
-                            </div>
-                       </div>
-                    </div>
+                <div class="descriptions">
+                    <h3>Wait for a confirmation message from M-PESA.</h3>
+    
                 </div>
             </div>
     
-            <div class="steps-images-details" id="steps-images-details">
-                <div class="step-number" id="step-number">
-                    <h1> STEP <br>9</h1>
-                </div>
-                <div class="step-one" id="step-one">
-                    <div class="safaricom">
-                        <h4>Safaricom</h4>
-                    </div>
-                    <div class="enter-business-no">
-                        <h5>Enter M-PESA PIN</h5>
-                    </div>
-                    <div class="important">
-                        <div class="fsa-paybill-no">
-                            <h2>****</h3>
-                        </div>
-                       <div class="directions">
-                            <div class="arrowSliding">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay1">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay2">
-                              <div class="arrow"></div>
-                            </div>
-                            <div class="arrowSliding delay3">
-                              <div class="arrow"></div>
-                            </div>
-                       </div>
-                    </div>
-                </div>
-            </div>
+           
         </div>
-        <script>
-                var myIndex = 0;
-                    carousel();
-    
-                    function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("steps-images-details");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";  
-                    }
-                    myIndex++;
-                    if (myIndex > x.length) {myIndex = 1}    
-                    x[myIndex-1].style.display = "block";  
-                    setTimeout(carousel, 5000); // Change image every 5 seconds
-                    }
-        </script> 
     </div>
 
 
@@ -542,8 +296,8 @@
     </div>
     <div class="more-accounts" id="more-accounts">
         <h4 class="what-other-looked">Other Customers Also Searched!</h4><br>
-        <div class="mySlides">
-            <img  src="shares.jpg" style="width:100%">
+        <div class="mySlides" id="myslides">
+            <img  src="shares.jpg"  id="slide-show">
             <div class="details" id="details">
                 <h1>Shares Account💼</h1>
                 <p>
@@ -552,7 +306,7 @@
         </div>
         
         <div class="mySlides">
-            <img  src="burial.jpg" style="width:100%">
+            <img  src="burial.jpg"  id="slide-show">
             <div class="details" id="details">
                 <h1>burial scheme accounts🌟</h1>
                 <p>We understand the importance of planning for life's inevitable moments, and we're here to support you every step of the way.<br><br>Unlock Peace of Mind with Our Exclusive Burial Scheme Account!</p>
@@ -561,21 +315,23 @@
         </div>
         
         <div class="mySlides">
-            <img  src="loan-accounts.jpg" style="width:100%">
+            <img  src="loan-accounts.jpg"  id="slide-show">
             <div class="details" id="details">
                 <h1>loan accounts🚀</h1>
                 <p>Whether it's a home, education, or personal project, we've got the perfect loan for you. Your financial goals are within reach - take the first step today!<br><br>Unlock Your Dreams with Our Exclusive Loan Accounts</p><br>
-                <a href="index.html" id="details-a">
-                </a><hr>
+<hr>
             </div>
         </div>
         
-        <div class="uiverse">
-            <span class="tooltip">Open Loan Calculator now!</span>
-            <span>
-                loan Calculator
-            </span>
-        </div>
+        <a href="index.html" id="details-a" style="text-decoration: none;">
+            <div class="uiverse">
+                <span class="tooltip">Open Loan Calculator now!</span>
+                <span>
+                    loan Calculator
+                </span>
+            </div>
+    
+        </a>
 
 
 

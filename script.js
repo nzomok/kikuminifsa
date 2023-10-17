@@ -13,7 +13,7 @@ function closeMenu() {
   }
 
 function closeAd(){
-  document.getElementById("candlads").style.marginLeft = "-100%";
+  document.getElementById("candlads").style.marginTop = "-600%";
   document.getElementById("close-ad-bar").style.display = "none";
   document.getElementById("overlay").style.display = "none";
 
@@ -21,7 +21,7 @@ function closeAd(){
   }
 
 function openAd(){
-  document.getElementById("candlads").style.marginLeft = "0%";
+  document.getElementById("candlads").style.marginTop = "-120%";
   document.getElementById("close-ad-bar").style.display = "block";
   document.getElementById("candlads").style.display = "block";
   document.getElementById("overlay").style.display = "block";
@@ -236,5 +236,5 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 5000); // Change image every 2 seconds
+  setTimeout(carousel, 5000); // Change image every 5 seconds
 }
