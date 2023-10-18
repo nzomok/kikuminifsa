@@ -50,6 +50,8 @@
 
             
     </nav>
+
+
     
     <div class="menu">
         <div id="overlay-sidebar">
@@ -80,7 +82,7 @@
                 <div class="payments">
                     <div class="fsa-payments">
                         
-                        <a href="loan.html"> Paybill & Payments</a>
+                        <a href="#" onclick="openAd()"> Paybill & Payments</a>
                     </div>
                 </div>
                 <hr>
@@ -131,117 +133,41 @@
         
     
     </div>
-    
 
-<div class="main-content" id="main-content">
-    
+
 
     <div class="savings-accounts" id="savings">
         <div class="about-savings-account" id="savings-accounts">
             <h2>Savings Account</h2>
             <p>Unlock Your Financial Freedom Today! Start Building Your Brighter Tomorrow with<strong>    WOTE-KIKUMINI F.S.A Savings Account. </strong><br><br> We're here to help you achieve your dreams. Secure your future, one deposit at a time. Join the thousands who are already on their journey to financial success.<br> <br>Don't wait; take the first step now! </p>  
         </div>
-    </div>
 
-
-    <div id="overlay">
-    </div>
-    <div class="candlads"  id="candlads">
-        <span class="close-ad-icon" id="close-ad-bar" onclick="closeAd()">&times;</span>
-        <div class="steps-images" id="step-images">
-            <div class="paybill-and-account">
-                <h3> <strong>LIPA NA M-PESA PROCESS</strong></h3>
-            </div>
-            <div class="steps" id="steps">
-                <div class="step-one">
-                    <h1>1.</h1>
+        <div id="overlay">
+        </div>
+        <div class="candlads"  id="candlads">
+            <span class="close-ad-icon" id="close-ad-bar" onclick="closeAd()">&times;</span>
+            <div class="paybill number" id="paybill-number">
+                <div>
+                    <p>OUR PAYBILL NUMBER:</p>
                 </div>
-                <div class="descriptions">
-                    <h3>Go to M-PESA menu!</h3>
-    
+                <div>
+                    <h1><strong>7132643</strong></h1>
                 </div>
             </div>
-            <div class="steps" id="steps">
-                <div class="step-one">
-                    <h1>2.</h1>
+            <div class="account-number" id="account-number">
+                <div>
+                    <p>ACCOUNT NUMBER:</p>
                 </div>
-                <div class="descriptions">
-                    <h3>Select LIPA NA M-PESA</h3>
-    
+                <div>
+                    <h1><strong>ENTER YOUR ID NUMBER</strong></h1>
                 </div>
+        
             </div>
-            <div class="steps" id="steps">
-                <div class="step-one">
-                    <h1>3.</h1>
-                </div>
-                <div class="descriptions">
-                    <h3>Then Enter BUSINESS NUMBER: <strong>7132643</strong></h3>
-    
-                </div>
-            </div>
-            <div class="steps" id="steps">
-                <div class="step-one">
-                    <h1>4.</h1>
-                </div>
-                <div class="descriptions">
-                    <h3>Enter YOUR ID NUMBER as your A/C NUMBER.</h3>
-    
-                </div>
-            </div>
-            <div class="steps" id="steps">
-                <div class="step-one">
-                    <h1>5.</h1>
-                </div>
-                <div class="descriptions">
-                    <h3>Enter Amount</h3>
-    
-                </div>
-            </div>
-            <div class="steps" id="steps">
-                <div class="step-one">
-                    <h1>6.</h1>
-                </div>
-                <div class="descriptions">
-                    <h3>Enter Your M-PESA PIN.</h3>
-    
-                </div>
-            </div>
-            <div class="steps" id="steps">
-                <div class="step-one">
-                    <h1>7.</h1>
-                </div>
-                <div class="descriptions">
-                    <h3>Confirm Your Payment.</h3>
-    
-                </div>
-            </div>
-            <div class="steps" id="steps">
-                <div class="step-one">
-                    <h1>8.</h1>
-                </div>
-                <div class="descriptions">
-                    <h3>Well Done !! Payment has been received.</h3>
-    
-                </div>
-            </div>
-            <div class="steps" id="steps">
-                <div class="step-one">
-                    <h1>9.</h1>
-                </div>
-                <div class="descriptions">
-                    <h3>Wait for a confirmation message from M-PESA.</h3>
-    
-                </div>
-            </div>
-    
            
         </div>
-    </div>
 
-
-    <div class="benefits" id="benefits">
-        <h2 id="benefits">Benefits</h2>
         <div class="list" id="lists">
+            <h2 id="benefits-heading" style="text-align: center;">Benefits</h2>
             <div class="benefit" id="benefit">
                 <h1>Easy To open</h1>
                 <div class="text">
@@ -253,7 +179,6 @@
                 <div class="text">
                     <p>You can deposit cash direct to your account using our paybill number.</p>
                 </div> 
-                <a href="#" onclick="openAd()">how to deposit!</a>
             </div>
             <div class="benefit" id="benefit">
                 <h1>free deposits</h1>
@@ -271,74 +196,68 @@
         </div>
 
 
-    </div>
     
-    <div class="what-we-need" id="what-we-need">
-        <div class="requirements" id="requirements">
-            <div class="what-we-need-from-you" id="what-we-need-from-you">
-                <h1>What We Need From you to open savings  account *</h1>
-                <ul>
-                    <li>Original and Valid ID or passport</li><br>
-                    <li>Phone number</li><br>
-                    <li>Applicant in person</li>
-                </ul>
-                <p>to open a saving account visit your nearest <strong>KIKUMINI-WOTE F.S.A branch</strong>, with the requirements above.</p>
-            </div><br><hr>
-            <div class="account-rates" id="account-rates">
-                <h1>Account  rates and fees </h1>
-                <ul>
-                    <li>opening balance - ksh 100</li><br>
-                    <li>monthly fee - ksh 00</li><br>
-                    <li>no deposit limits</li>
-                </ul>
+        <div class="what-we-need" id="what-we-need">
+            <div class="requirements" id="requirements">
+                <div class="what-we-need-from-you" id="what-we-need-from-you">
+                    <h1>What We Need From you to open savings  account *</h1>
+                    <ul>
+                        <li>Original and Valid ID or passport</li><br>
+                        <li>Phone number</li><br>
+                        <li>Applicant in person</li>
+                    </ul>
+                    <p>to open a saving account visit your nearest <strong>KIKUMINI-WOTE F.S.A branch</strong>, with the requirements above.</p>
+                </div><br><hr>
+                <div class="account-rates" id="account-rates">
+                    <h1>Account  rates and fees </h1>
+                    <ul>
+                        <li>opening balance - ksh 100</li><br>
+                        <li>monthly fee - ksh 00</li><br>
+                        <li>no deposit limits</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="more-accounts" id="more-accounts">
-        <h4 class="what-other-looked">Other Customers Also Searched!</h4><br>
-        <div class="mySlides" id="myslides">
-            <img  src="shares.jpg"  id="slide-show">
-            <div class="details" id="details">
-                <h1>Shares Account💼</h1>
-                <p>
-                    Opening a Shares Account is quick and hassle-free! Our team is ready to guide you through every step.</p>
-            </div><hr>
-        </div>
-        
-        <div class="mySlides">
-            <img  src="burial.jpg"  id="slide-show">
-            <div class="details" id="details">
-                <h1>burial scheme accounts🌟</h1>
-                <p>We understand the importance of planning for life's inevitable moments, and we're here to support you every step of the way.<br><br>Unlock Peace of Mind with Our Exclusive Burial Scheme Account!</p>
+        <div class="more-accounts" id="more-accounts">
+            <h4 class="what-other-looked">Other Customers Also Searched!</h4><br>
+            <div class="mySlides" id="myslides">
+                <img  src="shares.jpg"  id="slide-show"><hr>
+                <div class="details" id="details">
+                    <h1>Shares Account💼</h1>
+                    <p>
+                        Opening a Shares Account is quick and hassle-free! Our team is ready to guide you through every step.</p>
+                </div>
             </div><hr>
             
-        </div>
+            <div class="mySlides" id="myslides">
+                <img  src="burial.jpg"  id="slide-show"><hr>
+                <div class="details" id="details">
+                    <h1>burial scheme accounts🌟</h1>
+                    <p>We understand the importance of planning for life's inevitable moments, and we're here to support you every step of the way.<br><br>Unlock Peace of Mind with Our Exclusive Burial Scheme Account!</p>
+                </div>
+                
+            </div><hr>
+            
+            <div class="mySlides" id="myslides">
+                <img  src="loan-accounts.jpg"  id="slide-show"><hr>
+                <div class="details" id="details">
+                    <h1>loan accounts🚀</h1>
+                    <p>Whether it's a home, education, or personal project, we've got the perfect loan for you. Your financial goals are within reach - take the first step today!<br><br>Unlock Your Dreams with Our Exclusive Loan Accounts</p><br>
         
-        <div class="mySlides">
-            <img  src="loan-accounts.jpg"  id="slide-show">
-            <div class="details" id="details">
-                <h1>loan accounts🚀</h1>
-                <p>Whether it's a home, education, or personal project, we've got the perfect loan for you. Your financial goals are within reach - take the first step today!<br><br>Unlock Your Dreams with Our Exclusive Loan Accounts</p><br>
-<hr>
-            </div>
-        </div>
+                </div>
+            </div><hr>
+            
+            <!--<a href="index.html" id="details-a" style="text-decoration: none;">
+                <div class="uiverse">
+                    <span class="tooltip">Open Loan Calculator now!</span>
+                    <span>
+                        loan Calculator
+                    </span>
+                </div>
         
-        <a href="index.html" id="details-a" style="text-decoration: none;">
-            <div class="uiverse">
-                <span class="tooltip">Open Loan Calculator now!</span>
-                <span>
-                    loan Calculator
-                </span>
-            </div>
-    
-        </a>
+            </a>-->
 
-
-
-
-    </div>
-
-
+        </div>
         <footer id="footer">
             <div class="footer-info" id="footer-info">
                 <div class="for-you" id="for-you">
@@ -346,12 +265,7 @@
                     <div class="task">Create an Account</div>
                     <div class="task">Get a Loan</div>
                     <div class="task">Buy Shares</div>
-                    <div class="task">Save Your Money</div>
-        
-        
-                            
-                            
-                            
+                    <div class="task">Save Your Money</div>    
                 </div>
         
                 <div class="for-your-business" id="for-business">
@@ -363,17 +277,15 @@
         
                 </div>
             </div>
-            <div class="disclamer" id="disclamer">
-                <p>Designed and published by C & L TECH HUB</p>
-                <P>&copy;2023 F.S.A Kikumini</P>
-            </div>
         </footer>
-
-</div>
-
-
-
+        <div class="disclamer" id="disclamer">
+            <p>Designed and published by C & L TECH HUB</p>
+            <P>&copy;2023 F.S.A Kikumini</P>
+    
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 
 </html>

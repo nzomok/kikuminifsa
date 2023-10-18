@@ -452,7 +452,7 @@ input{
     position: fixed;
     transition: ease-in-out 0.5s;
     display: none;
-    z-index: 2;
+    z-index: 1;
     overflow: scroll;
 }
 
@@ -1780,247 +1780,32 @@ p{
 
 
 .candlads{
-  height: 100%;
   width: 1680px;
-  background-image: url(gradient-bokeh-digital-business-wallpaper.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center ;
   margin-bottom: 40px;
   border-radius: 5px;
   position: fixed;
-  background-color: #0099ff;
-  z-index: 2;
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
   display: none;
   transition: ease-in-out 0.5s;
-}
-
-@media(min-width:670px){
-  #candlads{
-    display: block;
-    position: fixed;
-    margin-top: 400%;
-    width: 0px;
-    margin-left: 50px;
-  }
-}
-
-@media(max-width:384px){
-  #step-images{
-    background-color: transparent;
-    height: 850px;
-    margin-top: 0px;
-    width: 435px;
-    margin-left: 10px;
-    overflow: scroll;
-    border-radius: 10px;
-    box-shadow: rgba(10, 10, 20, 0.1) 0px 8px 20px, rgba(10, 10, 20, 0.1) 0px 10px 50px, rgba(10, 10, 20, 0.1) 0px 20px 70px;
-
-
-
-  }
-}
-
-@media(min-width:385px) and (max-width:670px){
-  #step-images{
-    background-color: transparent;
-    height: 850px;
-    margin-top: 0px;
-    width: 635px;
-    margin-left: 10px;
-    border-radius: 10px;
-    overflow: scroll;
-    box-shadow: rgba(10, 10, 20, 0.1) 0px 8px 20px, rgba(10, 10, 20, 0.1) 0px 10px 50px, rgba(10, 10, 20, 0.1) 0px 20px 70px;
-
-
-
-  }
-}
-@media(min-width:670px){
-  #step-images{
-    background-color: transparent;
-    height: 850px;
-    margin-top: 0px;
-    width: 635px;
-    margin-left: 10px;
-    border-radius: 10px;
-    overflow: scroll;
-    box-shadow: rgba(10, 10, 20, 0.1) 0px 8px 20px, rgba(10, 10, 20, 0.1) 0px 10px 50px, rgba(10, 10, 20, 0.1) 0px 20px 70px;
-
-
-
-  }
-}
-
-
-@media(max-width:384px){
-  .paybill-and-account h3{
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-decoration: underline;
-    color: white;
-  }
-}
-
-@media(min-width:385px) and (max-width:670px){
-  .paybill-and-account h3{
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    font-size: 1.5rem;
-    font-weight: 900;
-    text-decoration: underline;
-    color: white;
-  }
-}
-
-@media(max-width:384px){
-  .steps{
-    display: flex;
-    margin: 30px;
-
-
-  }
-}
-
-@media(min-width:385px) and (max-width:670px){
-  .steps{
-    display: flex;
-    margin: 40px;
-
-
-
-  }
-}
-
-@media(max-width:384px){
-  .step-one{
-    background-color: rgb(0, 191, 255);
-    height: 40px;
-    margin-top: 0px;
-    width: 40px;
-    margin-left: 10px;
-    border-radius: 50px;
-    border: 2px solid rgb(18, 5, 80);
-    position: relative;
-    z-index: 1;
-
-  }
-}
-
-@media(min-width:385px) and (max-width:670px){
-  .step-one{
-    background-color: rgb(0, 191, 255);
-    height: 50px;
-    margin-top: 0px;
-    width: 50px;
-    margin-left: 10px;
-    border-radius: 50px;
-    border: 3px solid rgb(255, 255, 255);
-    position: relative;
-    z-index: 1;
-
-  }
-}
-
-
-
-@media(max-width:384px){
-  .step-one h1{
-    text-align: center;
-    margin-top: 5px;
-    font-size: 1.9rem;
-    color: whitesmoke;
-    margin-left: 5px;
-
-
-  }
-}
-
-@media(min-width:385px) and (max-width:670px){
-  .step-one h1{
-    text-align: center;
-    margin-top: 5px;
-    font-size: 1.9rem;
-    color: whitesmoke;
-    margin-left: 5px;
-
-
-  }
-}
-
-@media(max-width:384px){
-  .descriptions{
-    background-color: transparent;
-    height: auto;
-    margin-top: 0px;
-    width: 350px;
-    margin-left: 10px;
-    border-radius: 20px;
-    margin-left: 0px;
-    border-left: 0px;
-    position: relative;
-    padding: 5px;
-    border: 2px solid whitesmoke;
-    z-index: 0;
-
-  }
-}
-
-@media(min-width:385px) and (max-width:670px){
-  .descriptions{
-    height: auto;
-    margin-top: 0px;
-    width: 550px;
-    margin-left: -40px;
-    border-radius: 20px;
-    margin-left: 0px;
-    border-left: 0px;
-    position: relative;
-    z-index: 0;
-    border: 2px solid rgb(255, 255, 255);
-
-  }
-}
-
-@media(max-width:384px){
-  .descriptions h3{
-    font-size: 1rem;
-    text-align:left;
-    vertical-align: middle;
-    margin-top: 10px;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-
-
-  }
-}
-
-
-@media(min-width:385px) and (max-width:670px){
-  .descriptions h3{
-    font-size: 1.3rem;
-    text-align:left;
-    vertical-align: middle;
-    margin-top: 10px;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-
-
-  }
 }
 
 
 
 .candlads p{
-  color: white;
-  font: quicksand;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 200;
+  color: #000000;
+  margin-left: 10px;
 }
+
+.candlads h1{
+  font-size: 25px;
+  font-weight: 200;
+  color: #00aeff;
+  margin-left: 100px;
+}
+
 
 
 
@@ -2029,19 +1814,19 @@ p{
 @media(max-width: 384px){
   #candlads{
     width: 454px;
-    height: 100%;
+    height: 30%;
     margin-left: 10px;
     margin-right: -3%;
     margin-top: -200px;
-    position: -webkit-sticky;    z-index: 1;
+    position: -webkit-sticky;    
+    z-index: 1;
 
   }
 }
 @media (min-width: 385px)and (max-width: 670px){
   #candlads{
     width: 660px;
-    height: 100%;
-    background-color: rgb(3, 3, 40);
+    height: 30%;
     margin-left: 1%;
     margin-right: -1%;
     margin-top: -60%;
@@ -2054,16 +1839,43 @@ p{
 
 @media (min-width:670px){
   #candlads{
-    width: 560px;
-    height: 100%;
+    width: 600px;
+    height: 40%;
     position: -webkit-sticky; z-index: 1;
-    margin-top: -30%;
+    margin-top: -44%;
     z-index: 3;
+    display: none;
+    margin-left: 6%;
+    padding-left: 100px;
+    position: fixed;
+
 
 
 
   }
 }
+
+
+@media(max-width:384px){
+  #paybill-number{
+    display: inline-block;
+    margin-top: -90px;
+    text-align: center;
+  }
+}
+
+@media(max-width:384px){
+  #account-number{
+    display: inline-block;
+  }
+}
+
+
+
+
+
+
+
 
 #overlay{
   position: fixed;
@@ -2074,7 +1886,7 @@ p{
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.553);
+  background-color: rgba(0, 0, 0, 0.555);
   z-index: 1;
   transition: ease-in-out 0.5s;
 }
@@ -2087,14 +1899,13 @@ p{
   background-color: transparent;
   border-radius: 100px;
   cursor: pointer;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 
 }
 
 .close-ad-icon:hover{
   color: red;
   cursor: pointer;
-  font-size: 3rem;
 }
 
 @media(min-width:385px) and (max-width:670px){
@@ -2104,6 +1915,14 @@ p{
   }
 }
 
+@media(min-width:670px){
+  #close-ad-bar{
+    display:none ;
+
+  }
+}
+
+
 @media(max-width:384px){
   #close-ad-bar{
     margin-left: 380px;
@@ -2111,7 +1930,7 @@ p{
     margin-bottom: 10px;
     font-size: 5rem;
     font-weight: 100;
-    color: #ffffff;
+    color: #000000;
 
   }
 }
@@ -2222,6 +2041,8 @@ p{
 
 /* HOW TO SAVE PAGE*/
 
+
+
 .savings-accounts{
   height: 440px;
   background-color: rgb(253, 249, 249);
@@ -2242,6 +2063,21 @@ p{
     text-align: left;
     font-size: 23px;
     margin-bottom: 245px;
+    width: 680px;
+    height: 690px;
+
+  }
+
+} 
+
+@media(min-width:670px){
+  #savings {
+    left: 0;
+    text-align: left;
+    font-size: 23px;
+    margin-bottom: 245px;
+    width: 1580px;
+    height: 690px;
 
   }
 
@@ -2253,24 +2089,18 @@ p{
     text-align: left;
     font-size: 18px;
     margin-bottom: 30px;
+    width: 474px;
+    height: 510px;
 
   }
 
 } 
 
 
-.savings-accounts h2{
-  font-size: 42px;
-  margin-left:50px;
-  color: rgb(0, 0, 0);
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-}
-
 .about-savings-account{
   border-top: 10px solid rgb(0, 174, 255);
   padding-right: 20px;
-  background-color:rgba(255, 255, 255, 0.815);
+  background-color:rgba(255, 255, 255, 0.671);
   width: 650px;
   height: 400px;
   margin-left: 800px;
@@ -2284,13 +2114,16 @@ p{
   #savings-accounts{
     left: 0;
     text-align: left;
-    margin-left: 0px;
+    margin-left: 20px;
     font-size: 18px;
-    width: 96%;
+    width: 410px;
     height: 300px;
     background-color: rgba(234, 241, 247, 0.74);
     margin-bottom: 10px;
     margin-top: 220px;
+    padding-bottom: 20px;
+    box-shadow: rgba(10, 10, 20, 0.1) 0px 8px 20px, rgba(10, 10, 20, 0.1) 0px 10px 50px, rgba(10, 10, 20, 0.1) 0px 20px 70px;
+
   }
 
 } 
@@ -2305,20 +2138,41 @@ p{
   }
 
 } 
+
+
 @media(min-width:385px) and (max-width:670px){
   #savings-accounts {
     left: 0;
     text-align: left;
-    margin-left: 0px;
+    margin-left: 20px;
     font-size: 22px;
-    width: 660px;
+    width: 620px;
     margin-top: 320px;
-    background-color:rgba(245, 245, 245, 0.84);
-    border-radius: 0px;
+    background-color:rgba(255, 255, 255, 0.774);
+    border-radius: 10px;
+    box-shadow: rgba(10, 10, 20, 0.1) 0px 8px 20px, rgba(10, 10, 20, 0.1) 0px 10px 50px, rgba(10, 10, 20, 0.1) 0px 20px 70px;
+
 
   }
 
 } 
+@media(min-width:670px){
+  #savings-accounts {
+    margin-left: 900px;
+    text-align: left;
+    font-size: 22px;
+    width: 620px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    background-color:rgba(255, 255, 255, 0.774);
+    border-radius: 10px;
+    box-shadow: rgba(10, 10, 20, 0.1) 0px 8px 20px, rgba(10, 10, 20, 0.1) 0px 10px 50px, rgba(10, 10, 20, 0.1) 0px 20px 70px;
+
+
+  }
+
+} 
+
 @media(min-width:385px) and (max-width:670px){
   #savings-accounts h2{
     left: 0;
@@ -2337,12 +2191,6 @@ p{
   font-weight: 400;
 }
 
-.benefits{
-  display: block;
-  background-color: white;
-  height: auto;
-  padding: 20px;
-}
  .benefits h2{
   font-size: 32px;
   margin-left:130px;
@@ -2352,6 +2200,9 @@ p{
   padding-right: 20px;
 
  }
+
+
+
 
  @media(max-width:384px){
   #benefits h2 {
@@ -2381,21 +2232,36 @@ p{
  @media(max-width:384px){
   #lists{
     display: block;
+    width: 440px;
+    margin-left: 20px;
   }
  }
 
  @media(min-width:385px) and (max-width:670px){
   #lists{
     display: block;
+    width: 680px;
+  }
+ }
+ @media(min-width:670px){
+  #lists{
+    display: flex;
+    width: 1580px;
+  }
+ }
+ @media(min-width:670px){
+  #benefits-heading{
+    display: none;
   }
  }
 
+
 .benefit{
-  height: 200px;
+  height: 300px;
   width: 550px;
   border: 1px solid rgba(255, 255, 255, 0.319);
   border-radius: 0px;
-  background-color:rgb(245, 243, 243);
+  background-color:rgb(255, 255, 255);
   cursor: pointer;
   margin-left: 0px;
   box-shadow: 0px 10px 20px 0 rgba(0, 1, 0, 0.25);
@@ -2403,11 +2269,12 @@ p{
 
 @media(max-width:384px){
   #benefit{
-    width: 95%;
+    width: 330px;
     position: relative;
     height: 190px;
     margin-left: 10px;
     margin-bottom: 20px;
+    padding: 40px;
   }
 
 }
@@ -2415,11 +2282,28 @@ p{
 
 @media(min-width:385px) and (max-width:670px){
   #benefit{
-    width: 440px;
+    width: 640px;
     position: relative;
-    margin-left: 100px;
-    margin-bottom: 2px;
+    margin-left: 20px;
+    margin-bottom: 20px;
     text-align: center;
+    height: 200px;
+    padding-top: 40px;
+    border-radius: 10px;
+  }
+
+}
+
+@media(min-width:670px){
+  #benefit{
+    width: 350px;
+    position: relative;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 220px;
+    padding-top: 10px;
+    border-radius: 10px;
   }
 
 }
@@ -2660,23 +2544,22 @@ p{
 }
 
 @media(min-width:670px){
-  .myslides{
-    margin-left: 400px;
-    margin-top: -40px;
-    width: 80%;
+  #myslides{
+    width: 100%;
     height: auto;
-    justify-content: space-between;
+    padding: 20px;
+    display: flex;
   }
 }
 
 @media (max-width:384px){
   #slide-show{
-    margin-left: 40px;
+    margin-left: 50px;
     margin-top: 40px;
     height: auto;
     aspect-ratio: 3/2;
     object-fit: contain;
-    width:85%;
+    width:80%;
     margin-right: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 30px 0px rgb(8, 89, 155);
@@ -2689,7 +2572,7 @@ p{
 
 @media (min-width:670px){
   #slide-show{
-    width: 90%;
+    width: 40%;
     border-radius: 10px;
     align-self: center;
     margin: 0px;
@@ -2703,12 +2586,12 @@ p{
 
 @media (min-width:385px) and (max-width:670px){
   #slide-show{
-    margin-left: 20px;
+    margin-left: 90px;
     margin-top: 40px;
     height: auto;
     aspect-ratio: 3/2;
     object-fit: contain;
-    width:95%;
+    width: 500px;;
     margin-right: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 30px 0px rgb(8, 89, 155);
@@ -2732,6 +2615,21 @@ p{
     text-align: center ;
     padding-left: 40px;
     padding-right: 50px;
+
+  }
+}
+
+
+@media(min-width:670px){
+  #details{
+    margin-left: -20px;
+    text-align: center ;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 600px;
+    height: 200px;
+    margin-top: 50px;
+    margin-right: 200px;
 
   }
 }
@@ -3125,10 +3023,13 @@ svg:hover .tooltip {
 
 
 .arrow {
-  border:  10px solid rgb(255, 255, 255);
-  border-width: 0 7px 7px 0;
-  display: inline-block;
-  padding: 3px;
+  border: 10px solid whitesmoke;
+  width: 30px;
+  height: 30px;
+  transform: rotateZ(-45deg);
+  border-top: 0px;
+  border-left: 0px;
+
 }
 
 iframe{
